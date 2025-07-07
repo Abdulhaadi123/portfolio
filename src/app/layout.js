@@ -13,37 +13,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Muhammad Bilal | Portfolio",
+  title: "Talha Jabbar  | Portfolio",
   keywords: [
-    "Muhammad Bilal",
+    "Talha Jabbar ",
     "Portfolio",
-    "Full Stack Developer",
-    "React Developer",
-    "Next.js Developer",
-    "TypeScript Developer",
-    "Web Developer",
-    "Software Engineer",
+    "Mobile App Developer",
+    "React Native Expert", 
+     "Full Stack Developer", 
+     "Frontend Specialist", 
+     "Cross-Platform Developer", 
+     "Problem Solver"
   ],
-  authors: [{ name: "Muhammad Bilal", url: "https://github.com  /bilalTariq00" }],
-  creator: "Muhammad Bilal",
+  authors: [{ name: "Talha Jabbar ", url: "https://github.com  /Talha5t5" }],
+  creator: "Talha Jabbar ",
   openGraph: {
-    title: "Muhammad Bilal | Portfolio",
+    title: "Talha Jabbar | Portfolio",
     description:
       "Full Stack Developer specializing in Next.js, TypeScript, MongoDB, and AWS cloud services.",
     url: "https://portfolio-react-two.vercel.app/",
-    siteName: "Muhammad Bilal Portfolio",
+    siteName: "Talha Jabbar Portfolio",
     images: [
       {
         url: "https://portfolio-react-two.vercel.app/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Muhammad Bilal Portfolio",
+        alt: "Talha Jabbar  Portfolio",
       },
     ],
     locale: "en_US",
     type: "website",
   },
-  description: "Generated in next by Muhammad Bilal",
+  description: "Generated in next by Talha Jabbar ",
 };
 
 export default function RootLayout({ children }) {

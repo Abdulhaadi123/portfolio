@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { Mail, Github, Linkedin } from "lucide-react";
 import { toast } from "sonner";
 
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -53,11 +52,9 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-slate-800/50">
       <div className="container mx-auto px-6">
-        {/* … your header and contact info … */}
-
         {/* Contact Form */}
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
-            {/* Contact Information */}
+          {/* Contact Information */}
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-semibold text-white mb-6">Contact Information</h3>
@@ -68,8 +65,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">Email</p>
-                    <a href="mailto:bilal002ta@gmail.com" className="text-white hover:text-blue-400 transition-colors">
-                      bilal002ta@gmail.com
+                    <a href="mailto:rana.talha3d@gmail.com" className="text-white hover:text-blue-400 transition-colors">
+                      rana.talha3d@gmail.com
                     </a>
                   </div>
                 </div>
@@ -80,9 +77,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">GitHub</p>
-                    <a href="https://github.com/bilalTariq00" target="_blank" rel="noopener noreferrer" 
+                    <a href="https://github.com/Talha5t5" target="_blank" rel="noopener noreferrer" 
                        className="text-white hover:text-blue-400 transition-colors">
-                      github.com/bilalTariq00
+                      github.com/Talha5t5
                     </a>
                   </div>
                 </div>
@@ -93,7 +90,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">LinkedIn</p>
-                    <a href="http://linkedin.com/in/muhammad-bilal-b6a48b260" target="_blank" rel="noopener noreferrer" 
+                    <a href="https://www.linkedin.com/in/rana-talha-28275427a/" target="_blank" rel="noopener noreferrer" 
                        className="text-white hover:text-blue-400 transition-colors">
                       LinkedIn Profile
                     </a>
@@ -105,20 +102,13 @@ const Contact = () => {
             <div className="bg-slate-700/30 p-6 rounded-xl border border-slate-600/50">
               <h4 className="text-lg font-semibold text-white mb-4">Additional Contact</h4>
               <div className="space-y-2 text-gray-300">
-                <p><span className="text-blue-400">Phone:</span> +92 312 7327169 / 0355 8372706</p>
-                <p><span className="text-blue-400">Location:</span> Rawalpindi, Pakistan</p>
-                {/* <p><span className="text-blue-400">Portfolio:</span> 
-                  <a href="https://portfolio-react-two.vercel.app/" target="_blank" rel="noopener noreferrer" 
-                     className="text-blue-400 hover:text-blue-300 ml-2">
-                    View Portfolio
-                  </a>
-                </p> */}
+                <p><span className="text-blue-400">Phone:</span> 03229687307</p>
+                <p><span className="text-blue-400">Location:</span> Islamabad, Pakistan</p>
               </div>
             </div>
           </div>
 
-          {/* left column omitted for brevity */}
-
+          {/* Contact Form */}
           <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -188,4 +178,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact;   

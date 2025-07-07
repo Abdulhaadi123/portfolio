@@ -23,12 +23,12 @@ const ParticleBackground = () => {
       const particleCount = Math.min(100, Math.floor(window.innerWidth / 15));
       
       const colors = [
-        'rgba(59, 130, 246, 0.6)',   // blue
-        'rgba(147, 51, 234, 0.6)',   // purple
-        'rgba(236, 72, 153, 0.6)',   // pink
-        'rgba(34, 197, 94, 0.6)',    // green
-        'rgba(251, 146, 60, 0.6)',   // orange
-      ];
+  'rgba(33, 150, 243, 0.6)',   // Material Blue
+  'rgba(156, 39, 176, 0.6)',   // Material Purple
+  'rgba(255, 87, 34, 0.6)',    // Material Deep Orange
+  'rgba(76, 175, 80, 0.6)',    // Material Green
+  'rgba(255, 193, 7, 0.6)',    // Material Amber
+];
 
       for (let i = 0; i < particleCount; i++) {
         particles.push({

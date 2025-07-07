@@ -1,65 +1,104 @@
 "use client";
-import React, { useState } from 'react';
-import { Code2, Database, Cloud, Wrench } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Code2, Database, Cloud, Wrench, Smartphone, Award, TrendingUp, Zap } from 'lucide-react';
 
 const Skills = () => {
   const [hoveredSkill, setHoveredSkill] = useState(null);
+  const [animateOnMount, setAnimateOnMount] = useState(false);
+
+  useEffect(() => {
+    setAnimateOnMount(true);
+  }, []);
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Web Development",
       icon: Code2,
       color: "from-cyan-500 to-blue-500",
       skills: [
-        { name: "React.js", level: 90, color: "bg-gradient-to-r from-cyan-400 to-blue-500" },
-        { name: "Next.js", level: 85, color: "bg-gradient-to-r from-blue-400 to-purple-500" },
-        { name: "TypeScript", level: 80, color: "bg-gradient-to-r from-purple-400 to-pink-500" },
-        { name: "Tailwind CSS", level: 90, color: "bg-gradient-to-r from-teal-400 to-cyan-500" },
+        { name: "HTML5",      level: 95, color: "bg-gradient-to-r from-orange-400 to-red-500" },
+        { name: "CSS3",       level: 90, color: "bg-gradient-to-r from-pink-400 to-purple-500" },
         { name: "JavaScript", level: 85, color: "bg-gradient-to-r from-yellow-400 to-orange-500" },
-        { name: "HTML5", level: 95, color: "bg-gradient-to-r from-orange-400 to-red-500" },
-        { name: "CSS3", level: 90, color: "bg-gradient-to-r from-pink-400 to-purple-500" }
+        { name: "React.js",   level: 90, color: "bg-gradient-to-r from-cyan-400 to-blue-500" },
+        { name: "WordPress",  level: 75, color: "bg-gradient-to-r from-gray-400 to-slate-500" },
+        { name: "Git & GitHub", level: 85, color: "bg-gradient-to-r from-gray-600 to-gray-800" }
       ]
     },
     {
-      title: "Backend",
+      title: "Mobile & APIs",
+      icon: Smartphone,
+      color: "from-green-400 to-teal-500",
+      skills: [
+        { name: "React Native", level: 90, color: "bg-gradient-to-r from-green-400 to-emerald-500" },
+        { name: "API Integration", level: 85, color: "bg-gradient-to-r from-blue-500 to-indigo-500" },
+        { name: "RESTful APIs",  level: 85, color: "bg-gradient-to-r from-purple-400 to-pink-500" },
+        { name: "Firebase",   level: 78, color: "bg-gradient-to-r from-yellow-400 to-orange-500" },
+        { name: "Postman",    level: 88, color: "bg-gradient-to-r from-orange-400 to-red-500" },
+        { name: "JWT Auth",   level: 85, color: "bg-gradient-to-r from-red-500 to-pink-500" }
+      ]
+    },
+    {
+      title: "Backend & Database",
       icon: Database,
       color: "from-purple-500 to-pink-500",
       skills: [
-        { name: "Node.js", level: 80, color: "bg-gradient-to-r from-green-400 to-emerald-500" },
+        { name: "Node.js",    level: 80, color: "bg-gradient-to-r from-green-400 to-emerald-500" },
         { name: "Express.js", level: 75, color: "bg-gradient-to-r from-gray-400 to-slate-500" },
-        { name: "MongoDB", level: 85, color: "bg-gradient-to-r from-green-500 to-teal-500" },
-        { name: "REST APIs", level: 85, color: "bg-gradient-to-r from-blue-500 to-indigo-500" }
-      ]
-    },
-    {
-      title: "Cloud & DevOps",
-      icon: Cloud,
-      color: "from-green-400 to-teal-500",
-      skills: [
-        { name: "AWS Amplify", level: 80, color: "bg-gradient-to-r from-orange-400 to-yellow-500" },
-        { name: "AWS Cognito", level: 75, color: "bg-gradient-to-r from-red-400 to-pink-500" },
-        { name: "AWS S3", level: 80, color: "bg-gradient-to-r from-indigo-400 to-purple-500" },
-        { name: "Vercel", level: 90, color: "bg-gradient-to-r from-gray-700 to-black" },
-        { name: "Git", level: 85, color: "bg-gradient-to-r from-red-500 to-orange-500" }
-      ]
-    },
-    {
-      title: "Tools & Technologies",
-      icon: Wrench,
-      color: "from-orange-400 to-red-500",
-      skills: [
-        { name: "LiveKit", level: 70, color: "bg-gradient-to-r from-violet-400 to-purple-500" },
-        { name: "Web3", level: 65, color: "bg-gradient-to-r from-yellow-500 to-orange-600" },
-        { name: "Stripe", level: 75, color: "bg-gradient-to-r from-blue-600 to-purple-600" },
-        { name: "Sanity CMS", level: 80, color: "bg-gradient-to-r from-red-500 to-pink-500" },
-        { name: "GitHub", level: 85, color: "bg-gradient-to-r from-gray-600 to-gray-800" }
+        { name: "MongoDB",    level: 85, color: "bg-gradient-to-r from-green-500 to-teal-500" },
+        { name: "MySQL",      level: 78, color: "bg-gradient-to-r from-orange-500 to-amber-500" },
+        { name: "VS Code",    level: 92, color: "bg-gradient-to-r from-blue-400 to-blue-600" },
+        { name: "Figma",      level: 75, color: "bg-gradient-to-r from-purple-400 to-pink-400" }
       ]
     }
   ];
 
+  const achievements = [
+    {
+      icon: Award,
+      title: "2+ Years Experience",
+      description: "Full-stack development",
+      color: "from-yellow-400 to-orange-500"
+    },
+    {
+      icon: TrendingUp,
+      title: "25+ Projects",
+      description: "Successfully delivered",
+      color: "from-green-400 to-emerald-500"
+    },
+    {
+      icon: Zap,
+      title: "Cross-Platform",
+      description: "Mobile & Web expertise",
+      color: "from-purple-400 to-pink-500"
+    }
+  ];
+
   return (
-    <section id="skills" className="py-20 relative">
+    <section id="skills" className="py-20 relative overflow-hidden">
+      {/* Animated background particles */}
       <div className="absolute inset-0 bg-gradient-to-r from-slate-900/50 via-purple-900/30 to-slate-900/50"></div>
+      <div className="absolute inset-0">
+        {[...Array(50)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1 h-1 bg-cyan-400/30 rounded-full animate-pulse"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 2}s`,
+              animationDuration: `${2 + Math.random() * 3}s`
+            }}
+          />
+        ))}
+      </div>
+
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold mb-4">
@@ -73,7 +112,31 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Achievement Stats */}
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          {achievements.map((achievement, index) => (
+            <div
+              key={index}
+              className={`bg-slate-800/40 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50 hover:border-cyan-400/50 transition-all duration-500 transform hover:scale-105 ${
+                animateOnMount ? 'animate-fade-in-up' : 'opacity-0'
+              }`}
+              style={{ animationDelay: `${index * 0.2}s` }}
+            >
+              <div className="flex items-center space-x-4">
+                <div className={`w-12 h-12 bg-gradient-to-r ${achievement.color} rounded-xl flex items-center justify-center`}>
+                  <achievement.icon className="text-white" size={24} />
+                </div>
+                <div>
+                  <h3 className="text-white font-semibold text-lg">{achievement.title}</h3>
+                  <p className="text-gray-400 text-sm">{achievement.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Skills Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <div 
               key={index} 
@@ -128,10 +191,58 @@ const Skills = () => {
               </div>
             </div>
           ))}
+          </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-16">
+          <div className="bg-gradient-to-r from-cyan-500/10 to-purple-500/10 backdrop-blur-sm p-8 rounded-2xl border border-cyan-400/20">
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Ready to Build Something Amazing?
+            </h3>
+            <p className="text-gray-300 mb-6">
+              Let's collaborate and bring your ideas to life with cutting-edge technology
+            </p>
+            <button
+            onClick={() => scrollToSection('contact')}
+             className="bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-8 py-3 rounded-full font-semibold hover:from-cyan-400 hover:to-purple-400 transition-all duration-300 transform hover:scale-105">
+              Get In Touch
+            </button>
+          </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        @keyframes shimmer {
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(100%);
+          }
+        }
+        
+        .animate-fade-in-up {
+          animation: fade-in-up 0.6s ease-out forwards;
+        }
+        
+        .animate-shimmer {
+          animation: shimmer 2s infinite;
+        }
+      `}</style>
     </section>
   );
 };
 
 export default Skills;
+

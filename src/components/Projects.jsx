@@ -3,75 +3,90 @@ import React from 'react';
 import { Github, Code } from 'lucide-react';
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "StreamX",
-      description: "Live streaming platform built with Next.js, LiveKit, and Web3 tokens to help users earn money by streaming in real-time.",
-      technologies: ["Next.js", "LiveKit", "Web3", "TypeScript", "Real-time"],
-      category: "Full Stack"
-    },
-    {
-      title: "StreamXCapital",
-      description: "Debt resolution web app integrated with dynamic forms and custom dashboards for user financial recovery.",
-      technologies: ["React", "Dynamic Forms", "Custom Dashboards", "Financial APIs"],
-      category: "Web Application"
-    },
-    {
-      title: "AmnisX",
-      description: "Informational site showcasing StreamX features and documentation using modern frontend stacks.",
-      technologies: ["React", "Next.js", "Modern UI", "Documentation"],
-      category: "Website"
-    },
-    {
-      title: "Sozorock Health (US & CA)",
-      description: "Online medical consultation service for Canada and US. Features include appointment booking, patient medical history, and responsive UI.",
-      technologies: ["React", "Medical APIs", "Appointment System", "Responsive Design"],
-      category: "Healthcare",
-      links: {
-        live: "https://sozorockhealth.ca",
-        website: "https://sozorockhealth.com"
-      }
-    },
-    {
-      title: "Sozorock Provider",
-      description: "Healthcare portal for doctors and consultants to manage appointments, update availability, and access patient records with integrated Zoom support.",
-      technologies: ["React", "Zoom Integration", "Healthcare Management", "Real-time"],
-      category: "Healthcare Platform"
-    },
-    {
-      title: "Sanee",
-      description: "Job consultation and gig platform built in Vite. Includes messaging, profile management, and contract handling for recruiters and job seekers.",
-      technologies: ["Vite", "Messaging System", "Profile Management", "Contract Handling"],
-      category: "Job Platform"
-    },
-    {
-      title: "Soundes",
-      description: "E-commerce platform built with Next.js, includes product pages and user authentication.",
-      technologies: ["Next.js", "E-commerce", "Authentication", "Product Management"],
-      category: "E-commerce",
-      links: {
-        live: "https://ecommerce-6vsv.vercel.app/"
-      }
-    },
-    {
-      title: "Figmoria",
-      description: "Figma clone with React.js, Tailwind CSS, and Framer Motion for animations.",
-      technologies: ["React.js", "Tailwind CSS", "Framer Motion", "Design Tools"],
-      category: "Design Tool",
-      links: {
-        live: "https://figma-clone-kappa-jade.vercel.app/"
-      }
-    },
-    {
-      title: "Eatify",
-      description: "Restaurant menu application built in React.js with an intuitive UI.",
-      technologies: ["React.js", "Restaurant Management", "Intuitive UI", "Menu System"],
-      category: "Restaurant App",
-      links: {
-        live: "https://restaurant-jsx.vercel.app/"
-      }
+ const projects = [
+  {
+    title: "Voice SMS Voice To Text",
+    description: "Android app that captures your voice, converts it to text, and sends it as SMS.",
+    technologies: ["React Native", "Voice Recognition", "SMS API"],
+    category: "Mobile App",
+    links: {
+      live: "https://play.google.com/store/apps/details?id=com.createmessagebyvoice.voicenotes.aivoice"
     }
-  ];
+  },
+  {
+    title: "Restaurant Menu",
+    description: "Web app showcasing a dynamic restaurant menu with item filtering and responsive design.",
+    technologies: ["React.js", "HTML", "CSS", "JavaScript"],
+    category: "Web Application",
+    links: {
+      live: "https://restaurant-menu-navy-six.vercel.app/"
+    }
+  },
+  {
+    title: "Product Pedia",
+    description: "Online encyclopedia of products with search and categorization features.",
+    technologies: ["React Native", "Node js", "Express", "Mongo", "QrCode"],
+    category: "Mobile App",
+    links: {
+      live: "https://github.com/Talha5t5/ProductPedia"
+    }
+  },
+  {
+    title: "Campus Community",
+    description: "Community platform for students to post, share, and collaborate on campus events.",
+    technologies: ["React Native", "Node js", "Express", "Mongo",],
+    category: "Mobile App",
+    links: {
+      live: "https://github.com/Talha5t5/Campus-Community"
+    }
+  },
+  {
+    title: "Vantage Cad Services",
+    description: "Company website for Vantage CAD Services with portfolio and contact forms.",
+    technologies: ["Wordpress","HTML", "CSS", "JavaScript"],
+    category: "Website",
+    links: {
+      live: "https://vantagecadservices.com/"
+    }
+  },
+  {
+    title: "Headgear Hub",
+    description: "E-commerce storefront for custom headgear with product galleries and checkout flow.",
+    technologies: ["React.js", "HTML", "CSS", "JavaScript"],
+    category: "Web Application",
+    links: {
+      live: "https://headgear-hub.vercel.app/"
+    }
+  },
+  {
+    title: "Qari Sahab",
+    description: "Mobile app for Quran recitation and playback, with bookmarking and audio controls.",
+    technologies: ["React Native", "Audio APIs"],
+    category: "Mobile App",
+    links: {
+      live: "https://github.com/Talha5t5/QariSahabApp"
+    }
+  },
+  {
+    title: "Land Area Calculator by GPS",
+    description: "GPS-based land measurement tool that calculates area from mapped coordinates.",
+    technologies: ["React Native", "Geolocation API"],
+    category: "Mobile App",
+    links: {
+      live: "https://github.com/Talha5t5/Land-Area-Calculator-by-GPS"
+    }
+  },
+  {
+    title: "Vyntril",
+    description: "A CMS-powered site/project (details on request).",
+    technologies: ["WordPress"],
+    category: "Website",
+    links: {
+      live: "https://vyntril.com/"
+    }
+  }
+];
+
 
   const categories = [...new Set(projects.map(project => project.category))];
 

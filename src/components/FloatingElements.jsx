@@ -4,7 +4,7 @@ import { Code2, Zap, Star, Sparkles, Cpu, Globe } from 'lucide-react';
 
 const FloatingElements = () => {
   const elements = [
-    { Icon: Code2, delay: '0s', position: 'top-20 left-10' },
+    { Icon: Code2, delay: '3s', position: 'top-20 left-10' },
     { Icon: Zap, delay: '2s', position: 'top-40 right-20' },
     { Icon: Star, delay: '4s', position: 'bottom-40 left-20' },
     { Icon: Sparkles, delay: '1s', position: 'top-60 left-1/3' },

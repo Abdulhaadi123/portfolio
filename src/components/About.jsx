@@ -25,20 +25,20 @@ const About = () => {
             </div>
             
             <p className="text-gray-300 leading-relaxed">
-              Full Stack Developer with expertise in Next.js, TypeScript, MongoDB, and AWS cloud services including Amplify, 
-              Cognito, and S3. Strong background in building scalable full-stack web applications and real-time systems using 
-              LiveKit and Web3 technologies.
+              Mobile App Developer with 2 years of experience in building responsive web and Android applications. 
+              Skilled in React Native, MongoDB, Express.js, React.js, WordPress, and Node.js. Strong background in 
+              frontend and backend development, RESTful API integration, and performance optimization.
             </p>
             
             <p className="text-gray-300 leading-relaxed">
-              Proficient in Git workflows, RESTful APIs, and deployment via Vercel and AWS. Passionate about writing clean code 
-              and delivering quality user experiences.
+              Focused on writing clean code and delivering user-centric solutions. Experienced in creating cross-platform 
+              mobile applications with seamless user experiences and modern development practices.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="bg-slate-700/50 p-4 rounded-lg">
                 <h4 className="text-blue-400 font-semibold mb-2">Location</h4>
-                <p className="text-gray-300">Rawalpindi, Pakistan</p>
+                <p className="text-gray-300">Islamabad, Pakistan</p>
               </div>
               <div className="bg-slate-700/50 p-4 rounded-lg">
                 <h4 className="text-blue-400 font-semibold mb-2">Experience</h4>
@@ -59,7 +59,7 @@ const About = () => {
                   <p className="text-gray-300">PMAS Arid Agriculture University, Rawalpindi</p>
                 </div>
                 <div>
-                  <h5 className="text-blue-400 font-medium">F.Sc (Pre-Engineering)</h5>
+                  <h5 className="text-blue-400 font-medium">F.Sc (Pre-Medical)</h5>
                   <p className="text-gray-300">Rangers College</p>
                 </div>
               </div>
@@ -71,13 +71,13 @@ const About = () => {
                 <h4 className="text-xl font-semibold text-white">Portfolio Links</h4>
               </div>
               <div className="space-y-2">
-                <a href="https://portfolio-react-two.vercel.app/" target="_blank" rel="noopener noreferrer" 
-                   className="block text-blue-400 hover:text-blue-300 transition-colors">
-                  Portfolio Website
-                </a>
-                <a href="https://github.com/bilalTariq00" target="_blank" rel="noopener noreferrer" 
+                <a href="https://github.com/Talha5t5" target="_blank" rel="noopener noreferrer" 
                    className="block text-purple-400 hover:text-purple-300 transition-colors">
                   GitHub Profile
+                </a>
+                <a href="https://www.linkedin.com/in/rana-talha-28275427a/" target="_blank" rel="noopener noreferrer" 
+                   className="block text-blue-400 hover:text-blue-300 transition-colors">
+                  LinkedIn Profile
                 </a>
               </div>
             </div>

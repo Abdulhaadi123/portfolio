@@ -130,3 +130,13 @@
     box-shadow: 0 0 20px oklch(0.70 0.25 280 / 0.8), 0 0 30px oklch(0.65 0.30 300 / 0.6);
   }
 }
+@keyframes bg-pan {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.bg-animate-pan {
+  background: linear-gradient(60deg, #3b82f6, #1e3a8a, #000);
+  background-size: 300% 300%;
+  animation: bg-pan 8s ease infinite;
+}

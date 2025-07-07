@@ -3,59 +3,49 @@ import React from 'react';
 
 const Experience = () => {
   const experiences = [
-    {
-      title: "Full Stack Developer",
-      company: "Cyberoide",
-      location: "Rawalpindi",
-      period: "Mar 2025 – Present",
-      description: [
-        "Leading development on multiple full-stack applications using Next.js, TypeScript, and MongoDB",
-        "Integrated AWS Amplify, Cognito, and S3 for secure authentication, file storage, and deployment",
-        "Worked on real-time streaming integrations using LiveKit with token-based Web3 earnings",
-        "Managed Git workflows and deployed projects via Vercel and AWS"
-      ]
-    },
-    {
-      title: "Full Stack Developer",
-      company: "Softwise Solutions",
-      location: "Remote",
-      period: "Jul 2024 – Jan 2025",
-      description: [
-        "Built responsive UIs in React and Next.js with MongoDB backend",
-        "Implemented Node.js APIs and practiced Git-based project collaboration"
-      ]
-    },
-    {
-      title: "Frontend Developer Intern",
-      company: "Codebreaker Technologies",
-      location: "Remote",
-      period: "May 2024 – Jul 2024",
-      description: [
-        "Developed components in JavaScript/TypeScript, HTML, and CSS",
-        "Learned clean code principles and scalable folder structures"
-      ]
-    },
-    {
-      title: "Intern",
-      company: "Digital Empowerment Network",
-      location: "Remote",
-      period: "Mar 2024 – Apr 2024",
-      description: [
-        "Learned folder structure best practices for React and Next.js projects",
-        "Integrated CMS (Sanity) and Stripe payment gateways"
-      ]
-    },
-    {
-      title: "Frontend Developer Intern",
-      company: "Greens International",
-      location: "Remote",
-      period: "Oct 2023 – Feb 2024",
-      description: [
-        "Developed UI in React and Next.js",
-        "Gained experience with Git for version control and project coordination"
-      ]
-    }
-  ];
+  {
+    title: "Full Stack Developer",
+    company: "Softwise Solution",
+    location: "Onsite",
+    period: "Oct 2024 – Present",
+    description: [
+      "Focused on developing high-performance, cross-platform mobile applications using React Native",
+      "Collaborated with teams to deliver scalable, user-friendly mobile experiences",
+      "Continually learned and applied best practices in real-world app development"
+    ]
+  },
+  {
+    title: "Junior Frontend Developer",
+    company: "Outscalers",
+    location: "Remote",
+    period: "Jul 2024 – Sep 2024",
+    description: [
+      "Built responsive, mobile-first interfaces with seamless API integration",
+      "Implemented dynamic app functionality using modern frontend technologies"
+    ]
+  },
+  {
+    title: "App Developer Intern",
+    company: "Data App Studio",
+    location: "Onsite",
+    period: "Jan 2024 – May 2024",
+    description: [
+      "Developed front-end and mobile applications with a focus on responsive UI",
+      "Integrated RESTful APIs to ensure smooth, user-centric app workflows"
+    ]
+  },
+  {
+    title: "React Developer Intern",
+    company: "Green International",
+    location: "Onsite",
+    period: "Oct 2023 – Dec 2023",
+    description: [
+      "Contributed to React-based projects, developing and optimizing UI components",
+      "Adhered to clean code principles and collaborated via Git for version control"
+    ]
+  }
+];
+
 
   return (
     <section id="experience" className="py-20 bg-slate-800/50">
