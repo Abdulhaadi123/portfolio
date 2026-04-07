@@ -1,10 +1,22 @@
 "use client";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Code2, Database, Cloud, Wrench, Smartphone, Award, TrendingUp, Zap } from 'lucide-react';
 
 const Skills = () => {
   const [hoveredSkill, setHoveredSkill] = useState(null);
   const [animateOnMount, setAnimateOnMount] = useState(false);
+
+  const backgroundParticles = useMemo(
+    () =>
+      Array.from({ length: 50 }, (_, i) => ({
+        id: i,
+        left: (i * 37) % 100,
+        top: (i * 53) % 100,
+        delay: ((i % 10) * 0.2).toFixed(1),
+        duration: (2.2 + (i % 5) * 0.45).toFixed(2),
+      })),
+    []
+  );
 
   useEffect(() => {
     setAnimateOnMount(true);
@@ -85,15 +97,15 @@ const Skills = () => {
       {/* Animated background particles */}
       <div className="absolute inset-0 bg-gradient-to-r from-slate-900/50 via-purple-900/30 to-slate-900/50"></div>
       <div className="absolute inset-0">
-        {[...Array(50)].map((_, i) => (
+        {backgroundParticles.map((particle) => (
           <div
-            key={i}
+            key={particle.id}
             className="absolute w-1 h-1 bg-cyan-400/30 rounded-full animate-pulse"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 2}s`,
-              animationDuration: `${2 + Math.random() * 3}s`
+              left: `${particle.left}%`,
+              top: `${particle.top}%`,
+              animationDelay: `${particle.delay}s`,
+              animationDuration: `${particle.duration}s`,
             }}
           />
         ))}
@@ -102,11 +114,11 @@ const Skills = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-300 via-indigo-300 to-violet-300 bg-clip-text text-transparent">
               Technical Arsenal
             </span>
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 mx-auto mb-6 rounded-full"></div>
+          <div className="w-32 h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-600 mx-auto mb-6 rounded-full"></div>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg">
             🔥 Technologies I use to craft exceptional digital experiences
           </p>
@@ -117,7 +129,7 @@ const Skills = () => {
           {achievements.map((achievement, index) => (
             <div
               key={index}
-              className={`bg-slate-800/40 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50 hover:border-cyan-400/50 transition-all duration-500 transform hover:scale-105 ${animateOnMount ? 'animate-fade-in-up' : 'opacity-0'
+              className={`pro-card p-6 ${animateOnMount ? 'animate-fade-in-up' : 'opacity-0'
                 }`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
@@ -139,7 +151,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="group relative bg-slate-800/40 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50 hover:border-cyan-400/50 transition-all duration-500 hover:transform hover:scale-105"
+              className="group relative pro-card p-6 hover:transform hover:scale-105"
             >
               {/* Glassmorphism effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-white/0 rounded-2xl"></div>
@@ -154,7 +166,7 @@ const Skills = () => {
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-semibold text-white mb-6 text-center group-hover:text-cyan-400 transition-colors">
+                <h3 className="text-2xl font-semibold text-white mb-6 text-center group-hover:text-blue-300 transition-colors">
                   {category.title}
                 </h3>
 
@@ -170,7 +182,7 @@ const Skills = () => {
                         <span className="text-gray-300 text-sm font-medium group-hover/skill:text-white transition-colors">
                           {skill.name}
                         </span>
-                        <span className="text-cyan-400 text-sm font-bold">
+                        <span className="text-blue-300 text-sm font-bold">
                           {skill.level}%
                         </span>
                       </div>
@@ -196,11 +208,11 @@ const Skills = () => {
         <div className="mt-20">
           <div className="text-center mb-12">
             <h3 className="text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-300 to-indigo-300 bg-clip-text text-transparent">
                 Core Competencies
               </span>
             </h3>
-            <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto"></div>
           </div>
           
           <div className="flex flex-wrap justify-center gap-4">
@@ -218,9 +230,9 @@ const Skills = () => {
             ].map((competency, idx) => (
               <div 
                 key={idx}
-                className="px-6 py-3 bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 rounded-full hover:border-cyan-400/50 hover:bg-slate-700/50 transition-all duration-300 group cursor-default"
+                className="px-6 py-3 bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 rounded-full hover:border-blue-400/50 hover:bg-slate-700/50 transition-all duration-300 group cursor-default"
               >
-                <span className="text-gray-300 group-hover:text-cyan-400 font-medium transition-colors">
+                <span className="text-gray-300 group-hover:text-blue-300 font-medium transition-colors">
                   {competency}
                 </span>
               </div>
@@ -230,7 +242,7 @@ const Skills = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-cyan-500/10 to-purple-500/10 backdrop-blur-sm p-8 rounded-2xl border border-cyan-400/20">
+          <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 backdrop-blur-sm p-8 rounded-2xl border border-blue-400/20">
             <h3 className="text-2xl font-bold text-white mb-4">
               Ready to Build Something Amazing?
             </h3>
@@ -239,7 +251,7 @@ const Skills = () => {
             </p>
             <button
               onClick={() => scrollToSection('contact')}
-              className="bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-8 py-3 rounded-full font-semibold hover:from-cyan-400 hover:to-purple-400 transition-all duration-300 transform hover:scale-105">
+              className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-8 py-3 rounded-full font-semibold hover:from-blue-400 hover:to-indigo-500 transition-all duration-300 transform hover:scale-105">
               Get In Touch
             </button>
           </div>

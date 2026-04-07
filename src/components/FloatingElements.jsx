@@ -17,18 +17,18 @@ const FloatingElements = () => {
       {elements.map(({ Icon, delay, position }, index) => (
         <div
           key={index}
-          className={`absolute ${position} animate-pulse opacity-20`}
+          className={`absolute ${position} hero-orb opacity-10`}
           style={{
             animationDelay: delay,
-            animationDuration: '4s',
+            animationDuration: '10s',
           }}
         >
           <Icon 
-            size={24} 
-            className="text-cyan-400 animate-bounce"
+            size={22}
+            className="text-blue-200"
             style={{
               animationDelay: delay,
-              animationDuration: '3s',
+              animationDuration: '10s',
             }}
           />
         </div>

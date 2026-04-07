@@ -144,11 +144,11 @@ const Projects = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-300 to-indigo-300 bg-clip-text text-transparent">
               Featured Projects
             </span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6"></div>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Here are some of the projects I've worked on, showcasing my skills in full-stack development
           </p>
@@ -156,18 +156,18 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-slate-800/50 rounded-xl border border-slate-700/50 overflow-hidden hover:border-blue-500/30 transition-all duration-300 group">
+            <div key={index} className="pro-card overflow-hidden group">
               <div className="p-6">
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
                       <Code className="text-white" size={20} />
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
                         {project.title}
                       </h3>
-                      <span className="text-xs text-blue-400 bg-blue-400/10 px-2 py-1 rounded-full">
+                      <span className="text-xs text-blue-300 bg-blue-400/10 px-2 py-1 rounded-full">
                         {project.category}
                       </span>
                     </div>
@@ -201,13 +201,13 @@ const Projects = () => {
                     <div className="flex space-x-4">
                       {project.links.live && (
                         <a href={project.links.live} target="_blank" rel="noopener noreferrer" 
-                           className="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium">
+                           className="text-blue-300 hover:text-blue-200 transition-colors text-sm font-medium">
                           View Live →
                         </a>
                       )}
                       {project.links.website && (
                         <a href={project.links.website} target="_blank" rel="noopener noreferrer" 
-                           className="text-purple-400 hover:text-purple-300 transition-colors text-sm font-medium">
+                           className="text-indigo-300 hover:text-indigo-200 transition-colors text-sm font-medium">
                           Website →
                         </a>
                       )}

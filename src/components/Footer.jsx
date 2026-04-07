@@ -5,16 +5,16 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-900 py-12 border-t border-slate-800">
+    <footer className="bg-slate-950/80 py-12 border-t border-white/10 backdrop-blur-xl">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
                 <Code className="text-white" size={20} />
               </div>
-              <h3 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              <h3 className="text-xl font-bold bg-gradient-to-r from-blue-300 to-indigo-300 bg-clip-text text-transparent">
                 Talha Jabbar
               </h3>
             </div>

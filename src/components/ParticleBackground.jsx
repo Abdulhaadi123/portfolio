@@ -23,19 +23,17 @@ const ParticleBackground = () => {
       const particleCount = Math.min(100, Math.floor(window.innerWidth / 15));
       
       const colors = [
-  'rgba(33, 150, 243, 0.6)',   // Material Blue
-  'rgba(156, 39, 176, 0.6)',   // Material Purple
-  'rgba(255, 87, 34, 0.6)',    // Material Deep Orange
-  'rgba(76, 175, 80, 0.6)',    // Material Green
-  'rgba(255, 193, 7, 0.6)',    // Material Amber
-];
+        'rgba(96, 165, 250, 0.45)',
+        'rgba(129, 140, 248, 0.4)',
+        'rgba(56, 189, 248, 0.35)',
+      ];
 
       for (let i = 0; i < particleCount; i++) {
         particles.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          vx: (Math.random() - 0.5) * 0.5,
-          vy: (Math.random() - 0.5) * 0.5,
+          vx: (Math.random() - 0.5) * 0.25,
+          vy: (Math.random() - 0.5) * 0.25,
           size: Math.random() * 3 + 1,
           color: colors[Math.floor(Math.random() * colors.length)],
           opacity: Math.random() * 0.5 + 0.2,
@@ -70,11 +68,11 @@ const ParticleBackground = () => {
             Math.pow(particle.y - otherParticle.y, 2)
           );
 
-          if (distance < 100) {
+          if (distance < 130) {
             ctx.beginPath();
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(otherParticle.x, otherParticle.y);
-            ctx.strokeStyle = `rgba(59, 130, 246, ${0.1 * (1 - distance / 100)})`;
+            ctx.strokeStyle = `rgba(99, 102, 241, ${0.12 * (1 - distance / 130)})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }

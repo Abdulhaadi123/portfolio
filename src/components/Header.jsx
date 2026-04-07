@@ -25,30 +25,30 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-slate-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+      isScrolled ? 'bg-slate-950/85 backdrop-blur-xl border-b border-white/10 shadow-lg shadow-black/20' : 'bg-transparent'
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent flex items-center space-x-2">
-            <Image src="/image.png" width={30} height={30} className='mr-2'></Image>
+          <div className="text-2xl font-bold bg-gradient-to-r from-blue-200 to-indigo-300 bg-clip-text text-transparent flex items-center space-x-2">
+            <Image src="/image.png" width={30} height={30} className='mr-2' alt="Brand" />
             Talha Jabbar
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-white transition-colors">
+            <button onClick={() => scrollToSection('about')} className="text-slate-300 hover:text-white transition-colors">
               About
             </button>
-            <button onClick={() => scrollToSection('skills')} className="text-gray-300 hover:text-white transition-colors">
+            <button onClick={() => scrollToSection('skills')} className="text-slate-300 hover:text-white transition-colors">
               Skills
             </button>
-            <button onClick={() => scrollToSection('experience')} className="text-gray-300 hover:text-white transition-colors">
+            <button onClick={() => scrollToSection('experience')} className="text-slate-300 hover:text-white transition-colors">
               Experience
             </button>
-            <button onClick={() => scrollToSection('projects')} className="text-gray-300 hover:text-white transition-colors">
+            <button onClick={() => scrollToSection('projects')} className="text-slate-300 hover:text-white transition-colors">
               Projects
             </button>
-            <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-white transition-colors">
+            <button onClick={() => scrollToSection('contact')} className="text-slate-300 hover:text-white transition-colors">
               Contact
             </button>
           </div>
@@ -56,22 +56,22 @@ const Header = () => {
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
             <a href="https://github.com/Talha5t5" target="_blank" rel="noopener noreferrer" 
-               className="text-gray-300 hover:text-white transition-colors">
+               className="text-slate-300 hover:text-white transition-colors">
               <Github size={20} />
             </a>
             <a href="https://www.linkedin.com/in/rana-talha-28275427a/" target="_blank" rel="noopener noreferrer" 
-               className="text-gray-300 hover:text-white transition-colors">
+               className="text-slate-300 hover:text-white transition-colors">
               <Linkedin size={20} />
             </a>
             <a href="mailto:rana.talha3d@gmail.com" 
-               className="text-gray-300 hover:text-white transition-colors">
+               className="text-slate-300 hover:text-white transition-colors">
               <Mail size={20} />
             </a>
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-white"
+          <button
+            className="md:hidden text-white p-2 rounded-lg border border-white/10 bg-white/5"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <Menu size={24} />
@@ -80,7 +80,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 bg-slate-800/95 rounded-lg">
+          <div className="md:hidden mt-4 py-4 bg-slate-900/95 rounded-xl border border-white/10 animate-enter">
             <div className="flex flex-col space-y-3">
               <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-white transition-colors text-left px-4">
                 About
