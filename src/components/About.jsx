@@ -23,16 +23,17 @@ const About = () => {
               </div>
               <h3 className="text-2xl font-semibold text-white">Professional Summary</h3>
             </div>
-            
+
             <p className="text-gray-300 leading-relaxed">
-              Mobile App Developer with 2 years of experience in building responsive web and Android applications. 
-              Skilled in React Native, MongoDB, Express.js, React.js, WordPress, and Node.js. Strong background in 
-              frontend and backend development, RESTful API integration, and performance optimization.
+              Mobile App Developer with 3+ years of experience building scalable cross-platform applications using React
+              Native and full-stack technologies including Node.js, Express.js, and MongoDB. Skilled in developing high-performance
+              mobile apps, RESTful API integration, and responsive UI development.
             </p>
-            
+
             <p className="text-gray-300 leading-relaxed">
-              Focused on writing clean code and delivering user-centric solutions. Experienced in creating cross-platform 
-              mobile applications with seamless user experiences and modern development practices.
+              Experienced in deploying applications to Google Play Store, integrating Firebase services, and implementing
+              mobile monetization using Google AdMob. Passionate about building user-focused applications with clean,
+              maintainable code.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-8">
@@ -42,7 +43,7 @@ const About = () => {
               </div>
               <div className="bg-slate-700/50 p-4 rounded-lg">
                 <h4 className="text-blue-400 font-semibold mb-2">Experience</h4>
-                <p className="text-gray-300">2+ Years</p>
+                <p className="text-gray-300">3+ Years</p>
               </div>
             </div>
           </div>
@@ -71,12 +72,12 @@ const About = () => {
                 <h4 className="text-xl font-semibold text-white">Portfolio Links</h4>
               </div>
               <div className="space-y-2">
-                <a href="https://github.com/Talha5t5" target="_blank" rel="noopener noreferrer" 
-                   className="block text-purple-400 hover:text-purple-300 transition-colors">
+                <a href="https://github.com/Talha5t5" target="_blank" rel="noopener noreferrer"
+                  className="block text-purple-400 hover:text-purple-300 transition-colors">
                   GitHub Profile
                 </a>
-                <a href="https://www.linkedin.com/in/rana-talha-28275427a/" target="_blank" rel="noopener noreferrer" 
-                   className="block text-blue-400 hover:text-blue-300 transition-colors">
+                <a href="https://www.linkedin.com/in/rana-talha-28275427a/" target="_blank" rel="noopener noreferrer"
+                  className="block text-blue-400 hover:text-blue-300 transition-colors">
                   LinkedIn Profile
                 </a>
               </div>

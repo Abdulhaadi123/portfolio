@@ -3,89 +3,138 @@ import React from 'react';
 import { Github, Code } from 'lucide-react';
 
 const Projects = () => {
- const projects = [
-  {
-    title: "Voice SMS Voice To Text",
-    description: "Android app that captures your voice, converts it to text, and sends it as SMS.",
-    technologies: ["React Native", "Voice Recognition", "SMS API"],
-    category: "Mobile App",
-    links: {
-      live: "https://play.google.com/store/apps/details?id=com.createmessagebyvoice.voicenotes.aivoice"
+  const projects = [
+    {
+      title: "Slipy Sales",
+      description: "Comprehensive sales management application for tracking transactions and inventory.",
+      technologies: ["React Native", "Node.js", "MongoDB", "Express"],
+      category: "Mobile App",
+      links: { live: "https://github.com/Talha5t5" }
+    },
+    {
+      title: "Slipy Connect",
+      description: "Social networking and communication platform for seamless connectivity.",
+      technologies: ["React Native", "Socket.io", "Node.js", "Firebase"],
+      category: "Mobile App",
+      links: { live: "https://github.com/Talha5t5" }
+    },
+    {
+      title: "Event Planner",
+      description: "All-in-one event management tool for planning, tracking, and coordinating events.",
+      technologies: ["React Native", "Context API", "Firebase"],
+      category: "Mobile App",
+      links: { live: "https://github.com/Talha5t5" }
+    },
+    {
+      title: "Culinara",
+      description: "Recipe and culinary discovery app featuring a rich database of food items.",
+      technologies: ["React Native", "REST API", "Redux"],
+      category: "Mobile App",
+      links: { live: "https://github.com/Talha5t5" }
+    },
+    {
+      title: "Spendly",
+      description: "Personal finance and expense tracking app for budget management.",
+      technologies: ["React Native", "PostgreSQL", "Node.js"],
+      category: "Mobile App",
+      links: { live: "https://github.com/Talha5t5" }
+    },
+    {
+      title: "Voice SMS Voice To Text",
+      description: "Android app that captures your voice, converts it to text, and sends it as SMS.",
+      technologies: ["React Native", "Voice Recognition", "SMS API"],
+      category: "Mobile App",
+      links: {
+        live: "https://play.google.com/store/apps/details?id=com.createmessagebyvoice.voicenotes.aivoice"
+      }
+    },
+    {
+      title: "Restaurant Menu",
+      description: "Web app showcasing a dynamic restaurant menu with item filtering and responsive design.",
+      technologies: ["React.js", "HTML", "CSS", "JavaScript"],
+      category: "Web Application",
+      links: {
+        live: "https://restaurant-menu-navy-six.vercel.app/"
+      }
+    },
+    {
+      title: "Product Pedia",
+      description: "Online encyclopedia of products with search and QR code categorization features.",
+      technologies: ["React Native", "Node js", "Express", "MongoDB", "QrCode"],
+      category: "Mobile App",
+      links: {
+        live: "https://github.com/Talha5t5/ProductPedia"
+      }
+    },
+    {
+      title: "Campus Community",
+      description: "Community platform for students to post, share, and collaborate on campus events.",
+      technologies: ["React Native", "Node js", "Express", "MongoDB"],
+      category: "Mobile App",
+      links: {
+        live: "https://github.com/Talha5t5/Campus-Community"
+      }
+    },
+    {
+      title: "Vantage Cad Services",
+      description: "Company website for Vantage CAD Services with portfolio and contact forms.",
+      technologies: ["Wordpress","HTML", "CSS", "JavaScript"],
+      category: "Website",
+      links: {
+        live: "https://vantagecadservices.com/"
+      }
+    },
+    {
+      title: "Headgear Hub",
+      description: "E-commerce storefront for custom headgear with product galleries and checkout flow.",
+      technologies: ["React.js", "HTML", "CSS", "JavaScript"],
+      category: "Web Application",
+      links: {
+        live: "https://headgear-hub.vercel.app/"
+      }
+    },
+    {
+      title: "Qari Sahab",
+      description: "Mobile app for Quran recitation and playback, with bookmarking and audio controls.",
+      technologies: ["React Native", "Audio APIs"],
+      category: "Mobile App",
+      links: {
+        live: "https://github.com/Talha5t5/QariSahabApp"
+      }
+    },
+    {
+      title: "Land Area Calculator by GPS",
+      description: "GPS-based land measurement tool that calculates area from mapped coordinates.",
+      technologies: ["React Native", "Geolocation API"],
+      category: "Mobile App",
+      links: {
+        live: "https://github.com/Talha5t5/Land-Area-Calculator-by-GPS"
+      }
+    },
+    {
+      title: "Influencers Hub",
+      description: "Platform for connecting brands with influencers for marketing campaigns.",
+      technologies: ["React Native", "Node.js", "Express", "MongoDB"],
+      category: "Mobile App",
+      links: { live: "https://github.com/Talha5t5" }
+    },
+    {
+      title: "Slipy Retail",
+      description: "Retail management solution for inventory tracking and customer sales points.",
+      technologies: ["React Native", "Node.js", "Express", "MongoDB"],
+      category: "Mobile App",
+      links: { live: "https://github.com/Talha5t5" }
+    },
+    {
+      title: "Vyntril",
+      description: "A CMS-powered site for Vyntril with high-performance optimization.",
+      technologies: ["WordPress"],
+      category: "Website",
+      links: {
+        live: "https://vyntril.com/"
+      }
     }
-  },
-  {
-    title: "Restaurant Menu",
-    description: "Web app showcasing a dynamic restaurant menu with item filtering and responsive design.",
-    technologies: ["React.js", "HTML", "CSS", "JavaScript"],
-    category: "Web Application",
-    links: {
-      live: "https://restaurant-menu-navy-six.vercel.app/"
-    }
-  },
-  {
-    title: "Product Pedia",
-    description: "Online encyclopedia of products with search and categorization features.",
-    technologies: ["React Native", "Node js", "Express", "Mongo", "QrCode"],
-    category: "Mobile App",
-    links: {
-      live: "https://github.com/Talha5t5/ProductPedia"
-    }
-  },
-  {
-    title: "Campus Community",
-    description: "Community platform for students to post, share, and collaborate on campus events.",
-    technologies: ["React Native", "Node js", "Express", "Mongo",],
-    category: "Mobile App",
-    links: {
-      live: "https://github.com/Talha5t5/Campus-Community"
-    }
-  },
-  {
-    title: "Vantage Cad Services",
-    description: "Company website for Vantage CAD Services with portfolio and contact forms.",
-    technologies: ["Wordpress","HTML", "CSS", "JavaScript"],
-    category: "Website",
-    links: {
-      live: "https://vantagecadservices.com/"
-    }
-  },
-  {
-    title: "Headgear Hub",
-    description: "E-commerce storefront for custom headgear with product galleries and checkout flow.",
-    technologies: ["React.js", "HTML", "CSS", "JavaScript"],
-    category: "Web Application",
-    links: {
-      live: "https://headgear-hub.vercel.app/"
-    }
-  },
-  {
-    title: "Qari Sahab",
-    description: "Mobile app for Quran recitation and playback, with bookmarking and audio controls.",
-    technologies: ["React Native", "Audio APIs"],
-    category: "Mobile App",
-    links: {
-      live: "https://github.com/Talha5t5/QariSahabApp"
-    }
-  },
-  {
-    title: "Land Area Calculator by GPS",
-    description: "GPS-based land measurement tool that calculates area from mapped coordinates.",
-    technologies: ["React Native", "Geolocation API"],
-    category: "Mobile App",
-    links: {
-      live: "https://github.com/Talha5t5/Land-Area-Calculator-by-GPS"
-    }
-  },
-  {
-    title: "Vyntril",
-    description: "A CMS-powered site/project (details on request).",
-    technologies: ["WordPress"],
-    category: "Website",
-    links: {
-      live: "https://vyntril.com/"
-    }
-  }
-];
+  ];
 
 
   const categories = [...new Set(projects.map(project => project.category))];

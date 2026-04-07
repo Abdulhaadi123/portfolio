@@ -23,12 +23,12 @@ const Skills = () => {
       icon: Code2,
       color: "from-cyan-500 to-blue-500",
       skills: [
-        { name: "HTML5",      level: 95, color: "bg-gradient-to-r from-orange-400 to-red-500" },
-        { name: "CSS3",       level: 90, color: "bg-gradient-to-r from-pink-400 to-purple-500" },
+        { name: "React.js", level: 90, color: "bg-gradient-to-r from-cyan-400 to-blue-500" },
         { name: "JavaScript", level: 85, color: "bg-gradient-to-r from-yellow-400 to-orange-500" },
-        { name: "React.js",   level: 90, color: "bg-gradient-to-r from-cyan-400 to-blue-500" },
-        { name: "WordPress",  level: 75, color: "bg-gradient-to-r from-gray-400 to-slate-500" },
-        { name: "Git & GitHub", level: 85, color: "bg-gradient-to-r from-gray-600 to-gray-800" }
+        { name: "HTML5", level: 95, color: "bg-gradient-to-r from-orange-400 to-red-500" },
+        { name: "CSS3", level: 90, color: "bg-gradient-to-r from-pink-400 to-purple-500" },
+        { name: "Git & GitHub", level: 85, color: "bg-gradient-to-r from-gray-600 to-gray-800" },
+        { name: "GitHub Actions", level: 80, color: "bg-gradient-to-r from-blue-600 to-indigo-700" }
       ]
     },
     {
@@ -36,12 +36,12 @@ const Skills = () => {
       icon: Smartphone,
       color: "from-green-400 to-teal-500",
       skills: [
-        { name: "React Native", level: 90, color: "bg-gradient-to-r from-green-400 to-emerald-500" },
-        { name: "API Integration", level: 85, color: "bg-gradient-to-r from-blue-500 to-indigo-500" },
-        { name: "RESTful APIs",  level: 85, color: "bg-gradient-to-r from-purple-400 to-pink-500" },
-        { name: "Firebase",   level: 78, color: "bg-gradient-to-r from-yellow-400 to-orange-500" },
-        { name: "Postman",    level: 88, color: "bg-gradient-to-r from-orange-400 to-red-500" },
-        { name: "JWT Auth",   level: 85, color: "bg-gradient-to-r from-red-500 to-pink-500" }
+        { name: "React Native", level: 95, color: "bg-gradient-to-r from-green-400 to-emerald-500" },
+        { name: "Native Module Integration", level: 85, color: "bg-gradient-to-r from-cyan-400 to-blue-600" },
+        { name: "API Integration", level: 90, color: "bg-gradient-to-r from-blue-500 to-indigo-500" },
+        { name: "Firebase", level: 85, color: "bg-gradient-to-r from-yellow-400 to-orange-500" },
+        { name: "Postman", level: 88, color: "bg-gradient-to-r from-orange-400 to-red-500" },
+        { name: "JWT Auth", level: 85, color: "bg-gradient-to-r from-red-500 to-pink-500" }
       ]
     },
     {
@@ -49,12 +49,12 @@ const Skills = () => {
       icon: Database,
       color: "from-purple-500 to-pink-500",
       skills: [
-        { name: "Node.js",    level: 80, color: "bg-gradient-to-r from-green-400 to-emerald-500" },
-        { name: "Express.js", level: 75, color: "bg-gradient-to-r from-gray-400 to-slate-500" },
-        { name: "MongoDB",    level: 85, color: "bg-gradient-to-r from-green-500 to-teal-500" },
-        { name: "MySQL",      level: 78, color: "bg-gradient-to-r from-orange-500 to-amber-500" },
-        { name: "VS Code",    level: 92, color: "bg-gradient-to-r from-blue-400 to-blue-600" },
-        { name: "Figma",      level: 75, color: "bg-gradient-to-r from-purple-400 to-pink-400" }
+        { name: "Node.js", level: 85, color: "bg-gradient-to-r from-green-400 to-emerald-500" },
+        { name: "Express.js", level: 82, color: "bg-gradient-to-r from-gray-400 to-slate-500" },
+        { name: "MongoDB", level: 85, color: "bg-gradient-to-r from-green-500 to-teal-500" },
+        { name: "PostgreSQL", level: 75, color: "bg-gradient-to-r from-blue-500 to-cyan-600" },
+        { name: "Android Studio", level: 80, color: "bg-gradient-to-r from-green-500 to-emerald-400" },
+        { name: "Expo CLI", level: 90, color: "bg-gradient-to-r from-gray-200 to-gray-400" }
       ]
     }
   ];
@@ -62,13 +62,13 @@ const Skills = () => {
   const achievements = [
     {
       icon: Award,
-      title: "2+ Years Experience",
+      title: "3+ Years Experience",
       description: "Full-stack development",
       color: "from-yellow-400 to-orange-500"
     },
     {
       icon: TrendingUp,
-      title: "25+ Projects",
+      title: "30+ Projects",
       description: "Successfully delivered",
       color: "from-green-400 to-emerald-500"
     },
@@ -117,9 +117,8 @@ const Skills = () => {
           {achievements.map((achievement, index) => (
             <div
               key={index}
-              className={`bg-slate-800/40 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50 hover:border-cyan-400/50 transition-all duration-500 transform hover:scale-105 ${
-                animateOnMount ? 'animate-fade-in-up' : 'opacity-0'
-              }`}
+              className={`bg-slate-800/40 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50 hover:border-cyan-400/50 transition-all duration-500 transform hover:scale-105 ${animateOnMount ? 'animate-fade-in-up' : 'opacity-0'
+                }`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="flex items-center space-x-4">
@@ -138,30 +137,30 @@ const Skills = () => {
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="group relative bg-slate-800/40 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50 hover:border-cyan-400/50 transition-all duration-500 hover:transform hover:scale-105"
             >
               {/* Glassmorphism effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-white/0 rounded-2xl"></div>
-              
+
               {/* Animated background */}
               <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-2xl`}></div>
-              
+
               <div className="relative z-10">
                 <div className="flex items-center justify-center mb-6">
                   <div className={`w-16 h-16 bg-gradient-to-r ${category.color} rounded-2xl flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300`}>
                     <category.icon className="text-white" size={28} />
                   </div>
                 </div>
-                
+
                 <h3 className="text-2xl font-semibold text-white mb-6 text-center group-hover:text-cyan-400 transition-colors">
                   {category.title}
                 </h3>
-                
+
                 <div className="space-y-4">
                   {category.skills.map((skill, skillIndex) => (
-                    <div 
+                    <div
                       key={skillIndex}
                       className="group/skill cursor-pointer"
                       onMouseEnter={() => setHoveredSkill(`${index}-${skillIndex}`)}
@@ -176,9 +175,9 @@ const Skills = () => {
                         </span>
                       </div>
                       <div className="w-full bg-slate-700/50 rounded-full h-3 overflow-hidden backdrop-blur-sm">
-                        <div 
+                        <div
                           className={`${skill.color} h-3 rounded-full transition-all duration-1000 ease-out relative overflow-hidden`}
-                          style={{ 
+                          style={{
                             width: hoveredSkill === `${index}-${skillIndex}` ? `${skill.level}%` : '0%'
                           }}
                         >
@@ -191,7 +190,43 @@ const Skills = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Core Competencies */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="text-4xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                Core Competencies
+              </span>
+            </h3>
+            <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto"></div>
           </div>
+          
+          <div className="flex flex-wrap justify-center gap-4">
+            {[
+              "Firebase Authentication",
+              "Firebase Analytics",
+              "Socket.io",
+              "Redux / Context API",
+              "Axios / Fetch API",
+              "Push Notification Handling",
+              "Mobile App Deployment",
+              "Google Play Store",
+              "Google AdMob Integration",
+              "Third-Party API Integration"
+            ].map((competency, idx) => (
+              <div 
+                key={idx}
+                className="px-6 py-3 bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 rounded-full hover:border-cyan-400/50 hover:bg-slate-700/50 transition-all duration-300 group cursor-default"
+              >
+                <span className="text-gray-300 group-hover:text-cyan-400 font-medium transition-colors">
+                  {competency}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* Call to Action */}
         <div className="text-center mt-16">
@@ -203,8 +238,8 @@ const Skills = () => {
               Let's collaborate and bring your ideas to life with cutting-edge technology
             </p>
             <button
-            onClick={() => scrollToSection('contact')}
-             className="bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-8 py-3 rounded-full font-semibold hover:from-cyan-400 hover:to-purple-400 transition-all duration-300 transform hover:scale-105">
+              onClick={() => scrollToSection('contact')}
+              className="bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-8 py-3 rounded-full font-semibold hover:from-cyan-400 hover:to-purple-400 transition-all duration-300 transform hover:scale-105">
               Get In Touch
             </button>
           </div>

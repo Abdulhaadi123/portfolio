@@ -9,7 +9,7 @@ const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const roles = ['Mobile App Developer', 'React Native Expert', 'Full Stack Developer', 'Frontend Specialist', 'Cross-Platform Developer', 'Problem Solver'];
+  const roles = ['Mobile App Developer', 'React Native Expert', 'Full Stack Mobile App Developer', 'Cross-Platform Developer', 'Problem Solver'];
 
   useEffect(() => {
     const handleTyping = () => {
@@ -33,7 +33,7 @@ const Hero = () => {
 
     const timer = setTimeout(handleTyping, typingSpeed);
     return () => clearTimeout(timer);
-  }, [text, isDeleting, loopNum, typingSpeed, roles]);
+  }, [text, isDeleting, loopNum, typingSpeed]);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -79,11 +79,11 @@ const Hero = () => {
           </div>
           
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed backdrop-blur-sm bg-white/5 p-6 rounded-2xl border border-white/10">
-            🚀 Passionate Mobile App Developer with 2 years of experience building responsive web and Android applications. 
-            Skilled in React Native, MongoDB, Express.js, React.js, and Node.js, with expertise in frontend and backend development, 
-            RESTful API integration, and performance optimization.
+            🚀 Passionate Mobile App Developer with 3+ years of experience building scalable cross-platform applications. 
+            Skilled in React Native, MongoDB, Express.js, and Node.js, with expertise in deploying to Google Play Store 
+            and integrating Firebase services.
             <br />
-            <span className="text-cyan-400 font-semibold">✨ Focused on writing clean code and delivering user-centric solutions ✨</span>
+            <span className="text-cyan-400 font-semibold">✨ Focused on writing clean, maintainable code and delivering user-centric solutions ✨</span>
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -98,7 +98,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
             <button 
-              onClick={() => window.open('/Talha Jabbar CV.pdf', '_blank')}
+              onClick={() => window.open("/Talha's Resume.pdf", '_blank')}
               className="group px-8 py-4 border-2 border-cyan-400 text-cyan-400 rounded-xl font-semibold hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 backdrop-blur-sm bg-white/5 flex items-center justify-center gap-2"
             >
               <Download size={20} />

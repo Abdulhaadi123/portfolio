@@ -4,14 +4,36 @@ import React from 'react';
 const Experience = () => {
   const experiences = [
   {
-    title: "Full Stack Developer",
-    company: "Softwise Solution",
+    title: "Full Stack Mobile App Developer",
+    company: "VEEIVS",
+    location: "Islamabad, Pakistan",
+    period: "Dec 2025 – Present",
+    description: [
+      "Focused on developing full-stack, cross-platform mobile applications using React Native with custom native modules",
+      "Experienced in building scalable backend systems with Node.js, Express.js, and MongoDB",
+      "Skilled in deploying applications, managing environments through CLI tools, and delivering efficient, user-focused solutions"
+    ]
+  },
+  {
+    title: "Mobile App Developer",
+    company: "SLIPY TECHNOLOGIES PVT LMD",
+    location: "Islamabad, Pakistan",
+    period: "July 2025 – Dec 2025",
+    description: [
+      "Focused on developing full-stack, cross-platform mobile applications using React Native (Expo) with custom native modules",
+      "Built scalable backends with Node.js, Express.js, and MongoDB",
+      "Delivered efficient and user-focused solutions through modern development practices"
+    ]
+  },
+  {
+    title: "Full stack developer",
+    company: "SOFTWISE SOLUTION",
     location: "Onsite",
-    period: "Oct 2024 – Present",
+    period: "Oct 2024 – July 2025",
     description: [
       "Focused on developing high-performance, cross-platform mobile applications using React Native",
-      "Collaborated with teams to deliver scalable, user-friendly mobile experiences",
-      "Continually learned and applied best practices in real-world app development"
+      "Contributed to scalable solutions while collaborating with teams to deliver innovative, user-friendly mobile experiences",
+      "Gained hands-on experience in real-world app development and continuous learning"
     ]
   },
   {
