@@ -1,74 +1,103 @@
+"use client";
 import React from 'react';
-import { Github, Linkedin, Mail, Code } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const year = new Date().getFullYear();
+
+  const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  const navLinks = [
+    { label: 'About',      id: 'about' },
+    { label: 'Skills',     id: 'skills' },
+    { label: 'Experience', id: 'experience' },
+    { label: 'Projects',   id: 'projects' },
+    { label: 'Contact',    id: 'contact' },
+  ];
+
+  const socials = [
+    { icon: Github,   href: 'https://github.com/Abdulhaadi123',                      label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/abdul-hadi-6b2162247/',      label: 'LinkedIn' },
+    { icon: Mail,     href: 'mailto:abdulhadi86411@gmail.com',                        label: 'Email' },
+  ];
 
   return (
-    <footer className="bg-slate-950/80 py-12 border-t border-white/10 backdrop-blur-xl">
-      <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+    <footer className="relative border-t border-white/[0.06] bg-[#050811]/80 backdrop-blur-2xl">
+      <div className="container mx-auto px-6 py-12">
+        <div className="grid md:grid-cols-3 gap-10 mb-10">
+
           {/* Brand */}
           <div>
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                <Code className="text-white" size={20} />
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-9 h-9 rounded-xl flex items-center justify-center shadow-lg shadow-violet-500/20"
+                style={{ background: 'linear-gradient(135deg,#7c3aed,#06b6d4)' }}>
+                <span className="text-white font-black text-sm">AH</span>
               </div>
-              <h3 className="text-xl font-bold bg-gradient-to-r from-blue-300 to-indigo-300 bg-clip-text text-transparent">
-                Abdul Hadi
-              </h3>
+              <span className="text-white font-bold text-lg">Abdul Hadi</span>
             </div>
-            <p className="text-gray-400 leading-relaxed">
-              MERN Stack Developer & AI Engineer passionate about creating scalable web applications and production-level AI systems.
+            <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
+              MERN Stack Developer &amp; AI Engineer building scalable web apps and production-level Generative AI systems.
             </p>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Quick Links</h4>
-            <div className="space-y-2">
-              <a href="#about" className="block text-gray-400 hover:text-white transition-colors">About</a>
-              <a href="#skills" className="block text-gray-400 hover:text-white transition-colors">Skills</a>
-              <a href="#experience" className="block text-gray-400 hover:text-white transition-colors">Experience</a>
-              <a href="#projects" className="block text-gray-400 hover:text-white transition-colors">Projects</a>
-              <a href="#contact" className="block text-gray-400 hover:text-white transition-colors">Contact</a>
+            <div className="flex items-center gap-3 mt-5">
+              {socials.map(({ icon: Icon, href, label }) => (
+                <a key={label} href={href}
+                   target={href.startsWith('mailto') ? undefined : '_blank'}
+                   rel="noopener noreferrer"
+                   aria-label={label}
+                   className="w-9 h-9 rounded-lg border border-white/[0.08] bg-white/[0.03] flex items-center justify-center text-slate-500 hover:text-white hover:border-violet-500/30 hover:bg-violet-500/10 transition-all duration-200">
+                  <Icon size={15} />
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Contact Info */}
+          {/* Nav */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Get In Touch</h4>
-            <div className="space-y-2 text-gray-400">
-              <p>abdulhadi86411@gmail.com</p>
-              <p>+92 3126526771</p>
-              <p>DHA Multan, Pakistan</p>
-            </div>
-            <div className="flex space-x-4 mt-6">
-              <a href="https://github.com/Abdulhaadi123" target="_blank" rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors">
-                <Github size={20} />
-              </a>
-              <a href="https://www.linkedin.com/in/abdul-hadi-dev/" target="_blank" rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="mailto:abdulhadi86411@gmail.com"
-                  className="text-gray-400 hover:text-white transition-colors">
-                <Mail size={20} />
-              </a>
-            </div>
+            <h4 className="text-white font-bold text-sm uppercase tracking-widest mb-5">Navigation</h4>
+            <ul className="space-y-2.5">
+              {navLinks.map(({ label, id }) => (
+                <li key={id}>
+                  <button
+                    onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })}
+                    className="text-slate-500 hover:text-violet-400 text-sm transition-colors duration-200 font-medium"
+                  >
+                    {label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="text-white font-bold text-sm uppercase tracking-widest mb-5">Contact</h4>
+            <ul className="space-y-2.5">
+              <li>
+                <a href="mailto:abdulhadi86411@gmail.com" className="text-slate-500 hover:text-violet-400 text-sm transition-colors duration-200">
+                  abdulhadi86411@gmail.com
+                </a>
+              </li>
+              <li><p className="text-slate-500 text-sm">+92 312 652 6771</p></li>
+              <li><p className="text-slate-500 text-sm">DHA Multan, Pakistan</p></li>
+            </ul>
           </div>
         </div>
 
-        <div className="border-t border-slate-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
-              © {currentYear} Abdul Hadi. All rights reserved.
-            </p>
-            <p className="text-gray-400 text-sm mt-2 md:mt-0">
-              Built with Next.js, JavaScript, Node Mailer & Tailwind CSS
-            </p>
-          </div>
+        {/* Bottom bar */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-white/[0.05]">
+          <p className="text-slate-600 text-xs">
+            © {year} Abdul Hadi. All rights reserved.
+          </p>
+          <p className="text-slate-600 text-xs">
+            Built with Next.js · Node Mailer · Tailwind CSS
+          </p>
+          <button
+            onClick={scrollTop}
+            className="w-9 h-9 rounded-lg border border-white/[0.08] bg-white/[0.03] flex items-center justify-center text-slate-500 hover:text-white hover:border-violet-500/30 hover:bg-violet-500/10 transition-all duration-200"
+            aria-label="Back to top"
+          >
+            <ArrowUp size={14} />
+          </button>
         </div>
       </div>
     </footer>

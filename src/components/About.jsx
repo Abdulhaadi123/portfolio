@@ -1,83 +1,113 @@
-
 import React from 'react';
-import { User, Code, Github } from 'lucide-react';
+import { MapPin, Briefcase, GraduationCap, Github, Linkedin } from 'lucide-react';
+
+const SectionHeading = ({ label, title }) => (
+  <div className="text-center mb-16">
+    <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-violet-400 mb-3 px-3 py-1 rounded-full border border-violet-500/20 bg-violet-500/5">
+      {label}
+    </span>
+    <h2 className="text-4xl md:text-5xl font-black text-white mt-2">
+      {title}
+    </h2>
+    <div className="mt-4 mx-auto w-16 h-1 rounded-full" style={{ background: 'linear-gradient(90deg,#7c3aed,#06b6d4)' }} />
+  </div>
+);
 
 const About = () => {
+  const stats = [
+    { value: '3+',  label: 'Years Experience' },
+    { value: '20+', label: 'Projects Delivered' },
+    { value: '4',   label: 'Companies Worked' },
+    { value: '∞',   label: 'Lines of Code' },
+  ];
+
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-24">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              About Me
-            </span>
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+        <SectionHeading label="Who I Am" title="About Me" />
+
+        {/* Stats row */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 max-w-3xl mx-auto">
+          {stats.map(({ value, label }) => (
+            <div key={label} className="pro-card p-5 text-center">
+              <p className="text-3xl font-black text-gradient-primary mb-1">{value}</p>
+              <p className="text-xs text-slate-400 font-medium">{label}</p>
+            </div>
+          ))}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <div className="flex items-center space-x-4 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                <User className="text-white" size={24} />
+        <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto items-start">
+
+          {/* Left – Summary */}
+          <div className="space-y-5">
+            <div className="flex items-center gap-3 mb-2">
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(135deg,#7c3aed,#06b6d4)' }}>
+                <Briefcase size={18} className="text-white" />
               </div>
-              <h3 className="text-2xl font-semibold text-white">Professional Summary</h3>
+              <h3 className="text-xl font-bold text-white">Professional Summary</h3>
             </div>
 
-            <p className="text-gray-300 leading-relaxed">
-              MERN Stack Developer & AI Engineer with 3+ years of hands-on experience building scalable, 
-              high-performance web applications using React, Next.js, Node.js, Express.js, MongoDB, and TypeScript. 
-              Real-world experience integrating real-time features via Socket.io, secure JWT authentication, 
-              Firebase Cloud Messaging, and third-party APIs like Stripe.
+            <p className="text-slate-400 leading-relaxed text-sm">
+              MERN Stack Developer &amp; AI Engineer with <span className="text-violet-300 font-semibold">3+ years</span> of hands-on experience
+              building scalable, high-performance web applications using React, Next.js, Node.js, Express.js,
+              MongoDB, and TypeScript.
+            </p>
+            <p className="text-slate-400 leading-relaxed text-sm">
+              Also builds production-level Generative AI systems — RAG pipelines, Vector Databases, AI Agents,
+              and Speech AI integrations — bridging the gap between LLMs and deterministic business logic.
+              Delivered production-ready SaaS platforms, RESTful backends, and AI-powered tools across diverse domains.
             </p>
 
-            <p className="text-gray-300 leading-relaxed">
-              Also works as a Backend & AI Engineer, building production-level Generative AI systems including 
-              Retrieval-Augmented Generation (RAG) pipelines, Vector Databases, AI Agents, and Speech AI integrations, 
-              bridging the gap between LLMs and deterministic business logic. Delivered production-ready SaaS platforms, 
-              RESTful backends, and AI-powered tools across diverse domains.
-            </p>
+            <div className="flex items-center gap-6 pt-2">
+              <div className="flex items-center gap-2 text-slate-400 text-sm">
+                <MapPin size={14} className="text-violet-400" />
+                DHA Multan, Pakistan
+              </div>
+              <div className="flex items-center gap-2 text-slate-400 text-sm">
+                <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                Open to work
+              </div>
+            </div>
 
-            <div className="grid grid-cols-2 gap-4 mt-8">
-              <div className="pro-card p-4">
-                <h4 className="text-blue-300 font-semibold mb-2">Location</h4>
-                <p className="text-gray-300">DHA Multan, Pakistan</p>
-              </div>
-              <div className="pro-card p-4">
-                <h4 className="text-blue-300 font-semibold mb-2">Experience</h4>
-                <p className="text-gray-300">3+ Years</p>
-              </div>
+            <div className="flex gap-3 pt-1">
+              <a href="https://github.com/Abdulhaadi123" target="_blank" rel="noopener noreferrer"
+                 className="flex items-center gap-2 px-4 py-2 rounded-lg border border-slate-700/50 bg-white/[0.03] text-slate-400 hover:text-white hover:border-slate-500 text-sm transition-all duration-200 font-medium">
+                <Github size={15}/> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/abdul-hadi-6b2162247/" target="_blank" rel="noopener noreferrer"
+                 className="flex items-center gap-2 px-4 py-2 rounded-lg border border-slate-700/50 bg-white/[0.03] text-slate-400 hover:text-sky-400 hover:border-sky-500/40 text-sm transition-all duration-200 font-medium">
+                <Linkedin size={15}/> LinkedIn
+              </a>
             </div>
           </div>
 
-          <div className="space-y-6">
+          {/* Right – Education + Skills quick chips */}
+          <div className="space-y-5">
             <div className="pro-card p-6">
-              <div className="flex items-center space-x-4 mb-4">
-                <Code className="text-blue-400" size={24} />
-                <h4 className="text-xl font-semibold text-white">Education</h4>
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(135deg,#6366f1,#8b5cf6)' }}>
+                  <GraduationCap size={18} className="text-white" />
+                </div>
+                <h4 className="text-lg font-bold text-white">Education</h4>
               </div>
-              <div className="space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="w-2 h-2 rounded-full mt-1.5 shrink-0" style={{ background: 'linear-gradient(135deg,#7c3aed,#06b6d4)' }} />
                 <div>
-                  <h5 className="text-blue-300 font-medium">Bachelor of Science in Computer Science</h5>
-                  <p className="text-gray-300">PMAS Arid University, Rawalpindi, Pakistan</p>
+                  <h5 className="text-white font-semibold text-sm">BS Computer Science</h5>
+                  <p className="text-slate-400 text-xs mt-0.5">PMAS Arid University, Rawalpindi</p>
                 </div>
               </div>
             </div>
 
             <div className="pro-card p-6">
-              <div className="flex items-center space-x-4 mb-4">
-                <Github className="text-indigo-300" size={24} />
-                <h4 className="text-xl font-semibold text-white">Portfolio Links</h4>
-              </div>
-              <div className="space-y-2">
-                <a href="https://github.com/Abdulhaadi123" target="_blank" rel="noopener noreferrer"
-                  className="block text-indigo-300 hover:text-indigo-200 transition-colors">
-                  GitHub Profile
-                </a>
-                <a href="https://www.linkedin.com/in/abdul-hadi-dev/" target="_blank" rel="noopener noreferrer"
-                  className="block text-blue-300 hover:text-blue-200 transition-colors">
-                  LinkedIn Profile
-                </a>
+              <h4 className="text-white font-bold mb-4 text-sm uppercase tracking-widest">Core Stack</h4>
+              <div className="flex flex-wrap gap-2">
+                {['React.js','Next.js','Node.js','Express.js','MongoDB','TypeScript',
+                  'LLM / RAG','AI Agents','Socket.io','Tailwind CSS'].map(t => (
+                  <span key={t} className="px-3 py-1 text-xs font-medium rounded-full border border-violet-500/20 bg-violet-500/5 text-violet-300 hover:border-violet-400/50 hover:bg-violet-500/10 transition-all cursor-default">
+                    {t}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
