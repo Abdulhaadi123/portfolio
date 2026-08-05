@@ -26,15 +26,27 @@ const Contact = () => {
     e.preventDefault();
     setIsSending(true);
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "cfb81423-c073-45c2-96ec-e864c3a4a493",
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          subject: `Portfolio Message from ${formData.name}`,
+          from_name: "Abdul Hadi Portfolio",
+        }),
       });
       const body = await res.json();
-      if (!res.ok) throw new Error(body.error || "Unknown error");
+      if (!res.ok || !body.success) {
+        throw new Error(body.message || "Failed to send message");
+      }
       toast.success("Message Sent!", {
-        description: "Thank you! I'll get back to you soon.",
+        description: "Thank you! Your message has been delivered directly to my inbox.",
       });
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
