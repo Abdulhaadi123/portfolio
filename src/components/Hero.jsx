@@ -84,32 +84,32 @@ const Hero = () => {
           </div>
 
           {/* ── Name ── */}
-          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black mb-5 leading-[1.05] tracking-tight">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-5 leading-[1.08] tracking-tight">
             <span className="text-gradient-hero">Abdul Hadi</span>
           </h1>
 
           {/* ── Typewriter ── */}
           <div className="h-14 flex items-center justify-center mb-8">
-            <p className="text-xl sm:text-2xl font-light text-slate-300">
+            <p className="text-lg sm:text-2xl font-light text-slate-300">
               <span className="text-white font-semibold">{text}</span>
               <span className="inline-block w-[2px] h-6 bg-violet-400 ml-1 animate-pulse align-middle" />
             </p>
           </div>
 
           {/* ── Bio ── */}
-          <p className="text-base sm:text-lg text-slate-400 leading-relaxed max-w-2xl mx-auto mb-10 px-2">
-            Building scalable web apps & production-level AI systems — RAG pipelines, AI agents, and SaaS platforms — with React, Next.js, Node.js, and MongoDB.{' '}
+          <p className="text-sm sm:text-lg text-slate-400 leading-relaxed max-w-2xl mx-auto mb-10 px-2">
+            Building scalable web apps &amp; production-level AI systems — RAG pipelines, AI agents, and SaaS platforms — with React, Next.js, Node.js, and MongoDB.{' '}
             <span className="text-violet-300 font-medium">3+ years · Clean code · User-first.</span>
           </p>
 
           {/* ── CTA buttons ── */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3.5 sm:gap-4 mb-12 max-w-sm sm:max-w-none mx-auto">
             <button
               onClick={() => scrollToSection('projects')}
-              className="group relative px-8 py-3.5 rounded-xl font-semibold text-white text-sm overflow-hidden transition-all duration-300 hover:scale-105"
+              className="group relative w-full sm:w-auto px-8 py-3.5 rounded-xl font-semibold text-white text-sm overflow-hidden transition-all duration-300 hover:scale-105 shadow-lg shadow-violet-600/20"
               style={{ background: 'linear-gradient(135deg,#7c3aed,#6366f1,#06b6d4)', backgroundSize: '200% 200%' }}
             >
-              <span className="relative z-10 flex items-center gap-2">
+              <span className="relative z-10 flex items-center justify-center gap-2">
                 View My Work
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </span>
@@ -118,7 +118,7 @@ const Hero = () => {
 
             <button
               onClick={() => window.open('/Abdul Hadi CV.pdf', '_blank')}
-              className="group px-8 py-3.5 rounded-xl font-semibold text-sm text-violet-300 border border-violet-500/40 bg-violet-500/5 hover:bg-violet-500/15 hover:border-violet-400/60 hover:text-white transition-all duration-300 flex items-center gap-2 hover:scale-105"
+              className="group w-full sm:w-auto px-8 py-3.5 rounded-xl font-semibold text-sm text-violet-300 border border-violet-500/40 bg-violet-500/5 hover:bg-violet-500/15 hover:border-violet-400/60 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105"
             >
               <Download size={16} />
               Download CV
@@ -126,7 +126,7 @@ const Hero = () => {
 
             <button
               onClick={() => scrollToSection('contact')}
-              className="group px-8 py-3.5 rounded-xl font-semibold text-sm text-slate-300 border border-slate-600/40 bg-white/[0.03] hover:bg-white/[0.07] hover:border-slate-400/50 hover:text-white transition-all duration-300 hover:scale-105"
+              className="group w-full sm:w-auto px-8 py-3.5 rounded-xl font-semibold text-sm text-slate-300 border border-slate-600/40 bg-white/[0.03] hover:bg-white/[0.07] hover:border-slate-400/50 hover:text-white transition-all duration-300 hover:scale-105"
             >
               Get In Touch
             </button>

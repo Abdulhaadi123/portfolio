@@ -6,7 +6,7 @@ const SectionHeading = ({ label, title }) => (
     <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-violet-400 mb-3 px-3 py-1 rounded-full border border-violet-500/20 bg-violet-500/5">
       {label}
     </span>
-    <h2 className="text-4xl md:text-5xl font-black text-white mt-2">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mt-2">
       {title}
     </h2>
     <div className="mt-4 mx-auto w-16 h-1 rounded-full" style={{ background: 'linear-gradient(90deg,#7c3aed,#06b6d4)' }} />
@@ -27,11 +27,11 @@ const About = () => {
         <SectionHeading label="Who I Am" title="About Me" />
 
         {/* Stats row */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 max-w-3xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-16 max-w-3xl mx-auto">
           {stats.map(({ value, label }) => (
-            <div key={label} className="pro-card p-5 text-center">
-              <p className="text-3xl font-black text-gradient-primary mb-1">{value}</p>
-              <p className="text-xs text-slate-400 font-medium">{label}</p>
+            <div key={label} className="pro-card p-4 sm:p-5 text-center">
+              <p className="text-2xl sm:text-3xl font-black text-gradient-primary mb-1">{value}</p>
+              <p className="text-[11px] sm:text-xs text-slate-400 font-medium">{label}</p>
             </div>
           ))}
         </div>
@@ -58,18 +58,18 @@ const About = () => {
               Delivered production-ready SaaS platforms, RESTful backends, and AI-powered tools across diverse domains.
             </p>
 
-            <div className="flex items-center gap-6 pt-2">
+            <div className="flex flex-wrap items-center gap-4 sm:gap-6 pt-2">
               <div className="flex items-center gap-2 text-slate-400 text-sm">
-                <MapPin size={14} className="text-violet-400" />
+                <MapPin size={14} className="text-violet-400 shrink-0" />
                 DHA Multan, Pakistan
               </div>
               <div className="flex items-center gap-2 text-slate-400 text-sm">
-                <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
                 Open to work
               </div>
             </div>
 
-            <div className="flex gap-3 pt-1">
+            <div className="flex flex-wrap gap-3 pt-1">
               <a href="https://github.com/Abdulhaadi123" target="_blank" rel="noopener noreferrer"
                  className="flex items-center gap-2 px-4 py-2 rounded-lg border border-slate-700/50 bg-white/[0.03] text-slate-400 hover:text-white hover:border-slate-500 text-sm transition-all duration-200 font-medium">
                 <Github size={15}/> GitHub

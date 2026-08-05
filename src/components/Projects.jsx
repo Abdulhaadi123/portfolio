@@ -6,7 +6,7 @@ const SectionHeading = ({ label, title, subtitle }) => (
     <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-violet-400 mb-3 px-3 py-1 rounded-full border border-violet-500/20 bg-violet-500/5">
       {label}
     </span>
-    <h2 className="text-4xl md:text-5xl font-black text-white mt-2">{title}</h2>
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mt-2">{title}</h2>
     <div className="mt-4 mx-auto w-16 h-1 rounded-full" style={{ background: 'linear-gradient(90deg,#7c3aed,#06b6d4)' }} />
     {subtitle && <p className="mt-5 text-slate-400 max-w-xl mx-auto text-sm">{subtitle}</p>}
   </div>
@@ -99,7 +99,7 @@ const Projects = () => {
                         <Code2 size={18} className="text-white" />
                       </div>
                       <div className="min-w-0">
-                        <h3 className="text-base font-bold text-white group-hover:text-violet-300 transition-colors truncate">
+                        <h3 className="text-base font-bold text-white group-hover:text-violet-300 transition-colors">
                           {project.title}
                         </h3>
                         <span className={`inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border mt-0.5 ${cat.bg} ${cat.text} ${cat.border}`}>

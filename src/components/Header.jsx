@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
-import Image from 'next/image';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +25,7 @@ const Header = () => {
         ? 'bg-[#050811]/80 backdrop-blur-2xl border-b border-violet-500/10 shadow-2xl shadow-black/40'
         : 'bg-transparent'
     }`}>
-      <nav className="container mx-auto px-6 py-4">
+      <nav className="container mx-auto px-4 sm:px-6 py-4">
         <div className="flex items-center justify-between">
 
           {/* Logo */}

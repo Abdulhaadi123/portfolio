@@ -7,7 +7,7 @@ const SectionHeading = ({ label, title, subtitle }) => (
     <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-violet-400 mb-3 px-3 py-1 rounded-full border border-violet-500/20 bg-violet-500/5">
       {label}
     </span>
-    <h2 className="text-4xl md:text-5xl font-black text-white mt-2">{title}</h2>
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mt-2">{title}</h2>
     <div className="mt-4 mx-auto w-16 h-1 rounded-full" style={{ background: 'linear-gradient(90deg,#7c3aed,#06b6d4)' }} />
     {subtitle && <p className="mt-5 text-slate-400 max-w-xl mx-auto text-sm">{subtitle}</p>}
   </div>
@@ -121,7 +121,7 @@ const Skills = () => {
                       <div className="skill-track">
                         <div
                           className="skill-fill"
-                          style={{ width: isHovered ? `${skill.level}%` : '0%' }}
+                          style={{ width: `${skill.level}%` }}
                         />
                       </div>
                     </div>

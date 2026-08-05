@@ -73,7 +73,7 @@ const Footer = () => {
             <h4 className="text-white font-bold text-sm uppercase tracking-widest mb-5">Contact</h4>
             <ul className="space-y-2.5">
               <li>
-                <a href="mailto:abdulhadi86411@gmail.com" className="text-slate-500 hover:text-violet-400 text-sm transition-colors duration-200">
+                <a href="mailto:abdulhadi86411@gmail.com" className="text-slate-500 hover:text-violet-400 text-sm transition-colors duration-200 break-all sm:break-normal">
                   abdulhadi86411@gmail.com
                 </a>
               </li>
@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-white/[0.05]">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-white/[0.05] text-center md:text-left">
           <p className="text-slate-600 text-xs">
             © {year} Abdul Hadi. All rights reserved.
           </p>
