@@ -14,8 +14,8 @@ export async function POST(request) {
       );
     }
 
-    // Option 1: Web3Forms (No password required - recommended)
-    const web3Key = process.env.WEB3FORMS_ACCESS_KEY;
+    // Option 1: Web3Forms (No password required - active)
+    const web3Key = process.env.WEB3FORMS_ACCESS_KEY || 'cfb81423-c073-45c2-96ec-e864c3a4a493';
     if (web3Key) {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
