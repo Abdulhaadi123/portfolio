@@ -9,7 +9,7 @@ const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const roles = ['Mobile App Developer', 'React Native Expert', 'Full Stack Mobile App Developer', 'Cross-Platform Developer', 'Problem Solver'];
+  const roles = ['MERN Stack Developer', 'AI Engineer', 'Full Stack Developer', 'React & Next.js Expert', 'Problem Solver'];
 
   useEffect(() => {
     const handleTyping = () => {
@@ -64,7 +64,7 @@ const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient bg-300% relative">
-            Talha Jabbar
+            Abdul Hadi
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent opacity-50 blur-sm"></div>
           </h1>
           
@@ -78,11 +78,10 @@ const Hero = () => {
           </div>
           
           <p className="text-lg md:text-xl text-slate-200 mb-8 max-w-4xl mx-auto leading-relaxed backdrop-blur-sm bg-white/5 p-6 rounded-2xl border border-white/10">
-            Passionate Mobile App Developer with 3+ years of experience building scalable cross-platform applications.
-            Skilled in React Native, MongoDB, Express.js, and Node.js, with expertise in deploying to Google Play Store 
-            and integrating Firebase services.
+            MERN Stack Developer & AI Engineer with 3+ years of experience building scalable, high-performance web applications and production-level Generative AI systems.
+            Skilled in React, Next.js, Node.js, Express.js, MongoDB, and TypeScript — bridging the gap between LLMs and deterministic business logic.
             <br />
-            <span className="text-blue-300 font-semibold">Focused on writing clean, maintainable code and delivering user-centric solutions.</span>
+            <span className="text-blue-300 font-semibold">Focused on delivering clean, maintainable code and user-centric solutions.</span>
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -97,7 +96,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
             <button 
-              onClick={() => window.open("/Talha's Resume.pdf", '_blank')}
+              onClick={() => window.open("/Abdul Hadi CV.pdf", '_blank')}
               className="group px-8 py-4 border-2 border-blue-300 text-blue-200 rounded-xl font-semibold hover:bg-blue-300 hover:text-slate-900 transition-all duration-300 backdrop-blur-sm bg-white/5 flex items-center justify-center gap-2"
             >
               <Download size={20} />
@@ -112,17 +111,17 @@ const Hero = () => {
           </div>
           
           <div className="flex justify-center space-x-8">
-            <a href="https://github.com/Talha5t5" target="_blank" rel="noopener noreferrer" 
+            <a href="https://github.com/Abdulhaadi123" target="_blank" rel="noopener noreferrer" 
                className="group text-gray-400 hover:text-cyan-400 transition-all duration-300 transform hover:scale-125 relative">
               <Github size={32} />
               <div className="absolute -inset-2 bg-cyan-400/20 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>
             </a>
-            <a href="https://www.linkedin.com/in/rana-talha-28275427a/" target="_blank" rel="noopener noreferrer" 
+            <a href="https://www.linkedin.com/in/abdul-hadi-dev/" target="_blank" rel="noopener noreferrer" 
                className="group text-gray-400 hover:text-blue-400 transition-all duration-300 transform hover:scale-125 relative">
               <Linkedin size={32} />
               <div className="absolute -inset-2 bg-blue-400/20 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>
             </a>
-            <a href="mailto:rana.talha3d@gmail.com" 
+            <a href="mailto:abdulhadi86411@gmail.com" 
                className="group text-gray-400 hover:text-purple-400 transition-all duration-300 transform hover:scale-125 relative">
               <Mail size={32} />
               <div className="absolute -inset-2 bg-purple-400/20 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></div>

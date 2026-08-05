@@ -1,143 +1,59 @@
 
 import React from 'react';
-import { Github, Code } from 'lucide-react';
+import { Github, ExternalLink, Code } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: "Slipy Sales",
-      description: "Comprehensive sales management application for tracking transactions and inventory.",
-      technologies: ["React Native", "Node.js", "MongoDB", "Express"],
-      category: "Mobile App",
-      links: { live: "https://github.com/Talha5t5" }
+      title: "WoodWard",
+      description: "AI-powered sales coaching SaaS platform with multi-role dashboards for Admins, Coaches, and Sales Reps. Features AI-driven call simulation, Playbooks system, Stripe billing, and performance analytics.",
+      technologies: ["Next.js", "React", "TypeScript", "Stripe", "React Query", "Tailwind CSS"],
+      category: "AI SaaS",
+      links: { live: "https://www.outboundprospecting.ai/" }
     },
     {
-      title: "Slipy Connect",
-      description: "Social networking and communication platform for seamless connectivity.",
-      technologies: ["React Native", "Socket.io", "Node.js", "Firebase"],
-      category: "Mobile App",
-      links: { live: "https://github.com/Talha5t5" }
+      title: "AI Voice Outreach & Candidate Screening",
+      description: "Multi-tenant voice calling platform streaming real-time, low-latency AI phone calls between Twilio Media Streams and OpenAI Realtime API via WebSockets, with automated scheduling and post-call AI analysis.",
+      technologies: ["React", "TypeScript", "Node.js", "Express", "FastAPI", "Twilio", "OpenAI", "Supabase"],
+      category: "AI System",
+      links: { live: "https://ai-call-system.netlify.app/" }
     },
     {
-      title: "Event Planner",
-      description: "All-in-one event management tool for planning, tracking, and coordinating events.",
-      technologies: ["React Native", "Context API", "Firebase"],
-      category: "Mobile App",
-      links: { live: "https://github.com/Talha5t5" }
+      title: "Cordial-AI",
+      description: "Clinical AI Documentation & Compliance Platform automating clinical transcription, medical billing code (CPT/ICD-10) recommendation, and CMS compliance auditing using Deepgram, OpenAI GPT, and LangChain-Qdrant RAG pipeline.",
+      technologies: ["React", "Python Flask", "Deepgram", "OpenAI GPT", "LangChain", "Qdrant", "RAG"],
+      category: "AI Platform",
+      links: { live: "https://www.app.cordialhealthpc.com/" }
     },
     {
-      title: "Culinara",
-      description: "Recipe and culinary discovery app featuring a rich database of food items.",
-      technologies: ["React Native", "REST API", "Redux"],
-      category: "Mobile App",
-      links: { live: "https://github.com/Talha5t5" }
+      title: "Companion",
+      description: "Scalable RESTful API backend for an AI-powered mobile app with JWT-based auth, OTP email verification, OAuth (Google/Apple), advanced task management with timezone support, AI chat session management, and FCM push notifications.",
+      technologies: ["Node.js", "TypeScript", "Express.js", "MongoDB", "Firebase FCM", "JWT", "node-cron"],
+      category: "Backend API",
+      links: { live: "https://github.com/Abdulhaadi123/companion-backend" }
     },
     {
-      title: "Spendly",
-      description: "Personal finance and expense tracking app for budget management.",
-      technologies: ["React Native", "PostgreSQL", "Node.js"],
-      category: "Mobile App",
-      links: { live: "https://github.com/Talha5t5" }
-    },
-    {
-      title: "Voice SMS Voice To Text",
-      description: "Android app that captures your voice, converts it to text, and sends it as SMS.",
-      technologies: ["React Native", "Voice Recognition", "SMS API"],
-      category: "Mobile App",
-      links: {
-        live: "https://play.google.com/store/apps/details?id=com.createmessagebyvoice.voicenotes.aivoice"
-      }
-    },
-    {
-      title: "Restaurant Menu",
-      description: "Web app showcasing a dynamic restaurant menu with item filtering and responsive design.",
-      technologies: ["React.js", "HTML", "CSS", "JavaScript"],
+      title: "World Link",
+      description: "Full-stack web platform developed at Sparkix Technologies, featuring real-time connectivity, scalable backend, and a modern responsive UI built with the MERN stack and Socket.io.",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Socket.io", "Tailwind CSS"],
       category: "Web Application",
-      links: {
-        live: "https://restaurant-menu-navy-six.vercel.app/"
-      }
+      links: { live: "https://world-link.sparkixtech.com/" }
     },
     {
-      title: "Product Pedia",
-      description: "Online encyclopedia of products with search and QR code categorization features.",
-      technologies: ["React Native", "Node js", "Express", "MongoDB", "QrCode"],
-      category: "Mobile App",
-      links: {
-        live: "https://github.com/Talha5t5/ProductPedia"
-      }
-    },
-    {
-      title: "Campus Community",
-      description: "Community platform for students to post, share, and collaborate on campus events.",
-      technologies: ["React Native", "Node js", "Express", "MongoDB"],
-      category: "Mobile App",
-      links: {
-        live: "https://github.com/Talha5t5/Campus-Community"
-      }
-    },
-    {
-      title: "Vantage Cad Services",
-      description: "Company website for Vantage CAD Services with portfolio and contact forms.",
-      technologies: ["Wordpress","HTML", "CSS", "JavaScript"],
-      category: "Website",
-      links: {
-        live: "https://vantagecadservices.com/"
-      }
-    },
-    {
-      title: "Headgear Hub",
-      description: "E-commerce storefront for custom headgear with product galleries and checkout flow.",
-      technologies: ["React.js", "HTML", "CSS", "JavaScript"],
+      title: "Precision Grading",
+      description: "Professional grading and assessment web platform with a clean, high-performance UI and secure backend APIs. Delivers seamless user experience for grading workflows and data management.",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "REST API", "Tailwind CSS"],
       category: "Web Application",
-      links: {
-        live: "https://headgear-hub.vercel.app/"
-      }
+      links: { live: "https://precisiongrading.co.uk/" }
     },
     {
-      title: "Qari Sahab",
-      description: "Mobile app for Quran recitation and playback, with bookmarking and audio controls.",
-      technologies: ["React Native", "Audio APIs"],
-      category: "Mobile App",
-      links: {
-        live: "https://github.com/Talha5t5/QariSahabApp"
-      }
-    },
-    {
-      title: "Land Area Calculator by GPS",
-      description: "GPS-based land measurement tool that calculates area from mapped coordinates.",
-      technologies: ["React Native", "Geolocation API"],
-      category: "Mobile App",
-      links: {
-        live: "https://github.com/Talha5t5/Land-Area-Calculator-by-GPS"
-      }
-    },
-    {
-      title: "Influencers Hub",
-      description: "Platform for connecting brands with influencers for marketing campaigns.",
-      technologies: ["React Native", "Node.js", "Express", "MongoDB"],
-      category: "Mobile App",
-      links: { live: "https://github.com/Talha5t5" }
-    },
-    {
-      title: "Slipy Retail",
-      description: "Retail management solution for inventory tracking and customer sales points.",
-      technologies: ["React Native", "Node.js", "Express", "MongoDB"],
-      category: "Mobile App",
-      links: { live: "https://github.com/Talha5t5" }
-    },
-    {
-      title: "Vyntril",
-      description: "A CMS-powered site for Vyntril with high-performance optimization.",
-      technologies: ["WordPress"],
-      category: "Website",
-      links: {
-        live: "https://vyntril.com/"
-      }
+      title: "Grace AI",
+      description: "AI-powered platform delivering intelligent automation and conversational AI solutions. Built with a modern full-stack architecture to provide seamless, scalable AI-driven experiences for users.",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "AI Integration", "Tailwind CSS"],
+      category: "AI Platform",
+      links: { live: "https://www.graceai.com.au/" }
     }
   ];
-
-
-  const categories = [...new Set(projects.map(project => project.category))];
 
   return (
     <section id="projects" className="py-20">
@@ -150,11 +66,11 @@ const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 mx-auto mb-6"></div>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Here are some of the projects I've worked on, showcasing my skills in full-stack development
+            Here are some of the projects I've worked on, showcasing my expertise in full-stack and AI development
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="pro-card overflow-hidden group">
               <div className="p-6">
@@ -175,19 +91,19 @@ const Projects = () => {
                   {project.links && (
                     <div className="flex space-x-2">
                       {project.links.live && (
-                        <a href={project.links.live} target="_blank" rel="noopener noreferrer" 
+                        <a href={project.links.live} target="_blank" rel="noopener noreferrer"
                            className="text-gray-400 hover:text-white transition-colors">
-                          <Github size={20} />
+                          {project.links.live.includes('github') ? <Github size={20} /> : <ExternalLink size={20} />}
                         </a>
                       )}
                     </div>
                   )}
                 </div>
-                
+
                 <p className="text-gray-300 mb-4 leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
                     <span key={techIndex} className="text-xs bg-slate-700/50 text-gray-300 px-3 py-1 rounded-full border border-slate-600/50">
@@ -200,15 +116,9 @@ const Projects = () => {
                   <div className="mt-4 pt-4 border-t border-slate-700/50">
                     <div className="flex space-x-4">
                       {project.links.live && (
-                        <a href={project.links.live} target="_blank" rel="noopener noreferrer" 
+                        <a href={project.links.live} target="_blank" rel="noopener noreferrer"
                            className="text-blue-300 hover:text-blue-200 transition-colors text-sm font-medium">
-                          View Live →
-                        </a>
-                      )}
-                      {project.links.website && (
-                        <a href={project.links.website} target="_blank" rel="noopener noreferrer" 
-                           className="text-indigo-300 hover:text-indigo-200 transition-colors text-sm font-medium">
-                          Website →
+                          {project.links.live.includes('github') ? 'View on GitHub →' : 'View Live →'}
                         </a>
                       )}
                     </div>

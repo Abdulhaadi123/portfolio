@@ -65,8 +65,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">Email</p>
-                    <a href="mailto:rana.talha3d@gmail.com" className="text-white hover:text-blue-300 transition-colors">
-                      rana.talha3d@gmail.com
+                    <a href="mailto:abdulhadi86411@gmail.com" className="text-white hover:text-blue-300 transition-colors">
+                      abdulhadi86411@gmail.com
                     </a>
                   </div>
                 </div>
@@ -77,9 +77,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">GitHub</p>
-                    <a href="https://github.com/Talha5t5" target="_blank" rel="noopener noreferrer" 
+                    <a href="https://github.com/Abdulhaadi123" target="_blank" rel="noopener noreferrer" 
                        className="text-white hover:text-blue-300 transition-colors">
-                      github.com/Talha5t5
+                      github.com/Abdulhaadi123
                     </a>
                   </div>
                 </div>
@@ -90,9 +90,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">LinkedIn</p>
-                    <a href="https://www.linkedin.com/in/rana-talha-28275427a/" target="_blank" rel="noopener noreferrer" 
+                    <a href="https://www.linkedin.com/in/abdul-hadi-dev/" target="_blank" rel="noopener noreferrer" 
                        className="text-white hover:text-blue-300 transition-colors">
-                      LinkedIn Profile
+                      linkedin.com/in/abdul-hadi-dev
                     </a>
                   </div>
                 </div>
@@ -102,8 +102,8 @@ const Contact = () => {
             <div className="pro-card p-6">
               <h4 className="text-lg font-semibold text-white mb-4">Additional Contact</h4>
               <div className="space-y-2 text-gray-300">
-                <p><span className="text-blue-300">Phone:</span> 03229687307</p>
-                <p><span className="text-blue-300">Location:</span> Islamabad, Pakistan</p>
+                <p><span className="text-blue-300">Phone:</span> +92 3126526771</p>
+                <p><span className="text-blue-300">Location:</span> DHA Multan, Pakistan</p>
               </div>
             </div>
           </div>

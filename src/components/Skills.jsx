@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useMemo } from 'react';
-import { Code2, Database, Cloud, Wrench, Smartphone, Award, TrendingUp, Zap } from 'lucide-react';
+import { Code2, Database, Cloud, Wrench, Smartphone, Award, TrendingUp, Zap, Brain } from 'lucide-react';
 
 const Skills = () => {
   const [hoveredSkill, setHoveredSkill] = useState(null);
@@ -31,29 +31,16 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: "Web Development",
+      title: "Frontend",
       icon: Code2,
       color: "from-cyan-500 to-blue-500",
       skills: [
-        { name: "React.js", level: 90, color: "bg-gradient-to-r from-cyan-400 to-blue-500" },
-        { name: "JavaScript", level: 85, color: "bg-gradient-to-r from-yellow-400 to-orange-500" },
-        { name: "HTML5", level: 95, color: "bg-gradient-to-r from-orange-400 to-red-500" },
-        { name: "CSS3", level: 90, color: "bg-gradient-to-r from-pink-400 to-purple-500" },
-        { name: "Git & GitHub", level: 85, color: "bg-gradient-to-r from-gray-600 to-gray-800" },
-        { name: "GitHub Actions", level: 80, color: "bg-gradient-to-r from-blue-600 to-indigo-700" }
-      ]
-    },
-    {
-      title: "Mobile & APIs",
-      icon: Smartphone,
-      color: "from-green-400 to-teal-500",
-      skills: [
-        { name: "React Native", level: 95, color: "bg-gradient-to-r from-green-400 to-emerald-500" },
-        { name: "Native Module Integration", level: 85, color: "bg-gradient-to-r from-cyan-400 to-blue-600" },
-        { name: "API Integration", level: 90, color: "bg-gradient-to-r from-blue-500 to-indigo-500" },
-        { name: "Firebase", level: 85, color: "bg-gradient-to-r from-yellow-400 to-orange-500" },
-        { name: "Postman", level: 88, color: "bg-gradient-to-r from-orange-400 to-red-500" },
-        { name: "JWT Auth", level: 85, color: "bg-gradient-to-r from-red-500 to-pink-500" }
+        { name: "React.js", level: 92, color: "bg-gradient-to-r from-cyan-400 to-blue-500" },
+        { name: "Next.js", level: 90, color: "bg-gradient-to-r from-gray-400 to-slate-600" },
+        { name: "TypeScript", level: 85, color: "bg-gradient-to-r from-blue-500 to-indigo-600" },
+        { name: "Tailwind CSS", level: 90, color: "bg-gradient-to-r from-cyan-400 to-teal-500" },
+        { name: "Redux", level: 82, color: "bg-gradient-to-r from-purple-500 to-violet-600" },
+        { name: "JavaScript", level: 92, color: "bg-gradient-to-r from-yellow-400 to-orange-500" }
       ]
     },
     {
@@ -61,12 +48,25 @@ const Skills = () => {
       icon: Database,
       color: "from-purple-500 to-pink-500",
       skills: [
-        { name: "Node.js", level: 85, color: "bg-gradient-to-r from-green-400 to-emerald-500" },
-        { name: "Express.js", level: 82, color: "bg-gradient-to-r from-gray-400 to-slate-500" },
-        { name: "MongoDB", level: 85, color: "bg-gradient-to-r from-green-500 to-teal-500" },
-        { name: "PostgreSQL", level: 75, color: "bg-gradient-to-r from-blue-500 to-cyan-600" },
-        { name: "Android Studio", level: 80, color: "bg-gradient-to-r from-green-500 to-emerald-400" },
-        { name: "Expo CLI", level: 90, color: "bg-gradient-to-r from-gray-200 to-gray-400" }
+        { name: "Node.js", level: 90, color: "bg-gradient-to-r from-green-400 to-emerald-500" },
+        { name: "Express.js", level: 88, color: "bg-gradient-to-r from-gray-400 to-slate-500" },
+        { name: "MongoDB", level: 88, color: "bg-gradient-to-r from-green-500 to-teal-500" },
+        { name: "MySQL", level: 80, color: "bg-gradient-to-r from-orange-400 to-amber-500" },
+        { name: "PostgreSQL", level: 78, color: "bg-gradient-to-r from-blue-500 to-cyan-600" },
+        { name: "Socket.io", level: 85, color: "bg-gradient-to-r from-gray-600 to-gray-800" }
+      ]
+    },
+    {
+      title: "Generative AI & Tools",
+      icon: Brain,
+      color: "from-violet-500 to-purple-600",
+      skills: [
+        { name: "LLM Integration", level: 88, color: "bg-gradient-to-r from-violet-500 to-purple-600" },
+        { name: "RAG Pipelines", level: 85, color: "bg-gradient-to-r from-pink-500 to-rose-600" },
+        { name: "Vector Databases", level: 82, color: "bg-gradient-to-r from-indigo-500 to-blue-600" },
+        { name: "AI Agents", level: 80, color: "bg-gradient-to-r from-cyan-500 to-teal-600" },
+        { name: "Firebase FCM", level: 85, color: "bg-gradient-to-r from-yellow-400 to-orange-500" },
+        { name: "Git & GitHub", level: 90, color: "bg-gradient-to-r from-gray-600 to-gray-800" }
       ]
     }
   ];
@@ -75,19 +75,19 @@ const Skills = () => {
     {
       icon: Award,
       title: "3+ Years Experience",
-      description: "Full-stack development",
+      description: "Full-stack & AI development",
       color: "from-yellow-400 to-orange-500"
     },
     {
       icon: TrendingUp,
-      title: "30+ Projects",
-      description: "Successfully delivered",
+      title: "Production SaaS",
+      description: "AI-powered platforms delivered",
       color: "from-green-400 to-emerald-500"
     },
     {
       icon: Zap,
-      title: "Cross-Platform",
-      description: "Mobile & Web expertise",
+      title: "AI & Web Expert",
+      description: "MERN + Generative AI systems",
       color: "from-purple-400 to-pink-500"
     }
   ];
@@ -217,16 +217,21 @@ const Skills = () => {
           
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              "Firebase Authentication",
-              "Firebase Analytics",
-              "Socket.io",
-              "Redux / Context API",
-              "Axios / Fetch API",
-              "Push Notification Handling",
-              "Mobile App Deployment",
-              "Google Play Store",
-              "Google AdMob Integration",
-              "Third-Party API Integration"
+              "RAG Pipelines",
+              "Vector Databases",
+              "AI Agents",
+              "Speech AI Integration",
+              "Prompt Engineering",
+              "JWT Authentication",
+              "Stripe Integration",
+              "Firebase FCM",
+              "Socket.io Real-time",
+              "RESTful API Design",
+              "SaaS Platforms",
+              "Twilio Media Streams",
+              "OpenAI API",
+              "LangChain",
+              "Cron Job Automation"
             ].map((competency, idx) => (
               <div 
                 key={idx}

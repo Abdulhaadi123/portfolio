@@ -4,66 +4,37 @@ import React from 'react';
 const Experience = () => {
   const experiences = [
   {
-    title: "Full Stack Mobile App Developer",
-    company: "VEEIVS",
-    location: "Islamabad, Pakistan",
-    period: "Dec 2025 – Present",
+    title: "MERN Stack Developer",
+    company: "Sparkix Technologies",
+    location: "Pakistan",
+    period: "Sep 2025 – Present",
     description: [
-      "Focused on developing full-stack, cross-platform mobile applications using React Native with custom native modules",
-      "Experienced in building scalable backend systems with Node.js, Express.js, and MongoDB",
-      "Skilled in deploying applications, managing environments through CLI tools, and delivering efficient, user-focused solutions"
+      "Developed and maintained scalable full-stack applications using MongoDB, Express.js, React.js, and Node.js",
+      "Built responsive user interfaces with React and Tailwind CSS, and designed secure RESTful APIs for seamless integration",
+      "Integrated real-time features using Socket.io and Firebase Cloud Messaging (FCM), and implemented cron jobs for task automation",
+      "Optimized performance, maintained clean code, and collaborated with teams to deliver efficient solutions"
     ]
   },
   {
-    title: "Mobile App Developer",
-    company: "SLIPY TECHNOLOGIES PVT LMD",
-    location: "Islamabad, Pakistan",
-    period: "July 2025 – Dec 2025",
+    title: "Full Stack Developer",
+    company: "ClickTake Technologies",
+    location: "Pakistan",
+    period: "Jul 2025 – Aug 2025",
     description: [
-      "Focused on developing full-stack, cross-platform mobile applications using React Native (Expo) with custom native modules",
-      "Built scalable backends with Node.js, Express.js, and MongoDB",
-      "Delivered efficient and user-focused solutions through modern development practices"
+      "Designed, developed, and maintained scalable web applications across front-end (React.js) and back-end (Node.js, Express.js) environments",
+      "Ensured seamless integration between user interfaces and server-side logic",
+      "Managed relational databases by writing optimized SQL queries for data retrieval, storage, and performance tuning",
+      "Delivered high-quality, efficient, and secure digital solutions aligned with business goals"
     ]
   },
   {
-    title: "Full stack developer",
-    company: "SOFTWISE SOLUTION",
-    location: "Onsite",
-    period: "Oct 2024 – July 2025",
+    title: "Software Developer",
+    company: "Softwise Solution",
+    location: "Pakistan",
+    period: "Jan 2024 – Dec 2024",
     description: [
-      "Focused on developing high-performance, cross-platform mobile applications using React Native",
-      "Contributed to scalable solutions while collaborating with teams to deliver innovative, user-friendly mobile experiences",
-      "Gained hands-on experience in real-world app development and continuous learning"
-    ]
-  },
-  {
-    title: "Junior Frontend Developer",
-    company: "Outscalers",
-    location: "Remote",
-    period: "Jul 2024 – Sep 2024",
-    description: [
-      "Built responsive, mobile-first interfaces with seamless API integration",
-      "Implemented dynamic app functionality using modern frontend technologies"
-    ]
-  },
-  {
-    title: "App Developer Intern",
-    company: "Data App Studio",
-    location: "Onsite",
-    period: "Jan 2024 – May 2024",
-    description: [
-      "Developed front-end and mobile applications with a focus on responsive UI",
-      "Integrated RESTful APIs to ensure smooth, user-centric app workflows"
-    ]
-  },
-  {
-    title: "React Developer Intern",
-    company: "Green International",
-    location: "Onsite",
-    period: "Oct 2023 – Dec 2023",
-    description: [
-      "Contributed to React-based projects, developing and optimizing UI components",
-      "Adhered to clean code principles and collaborated via Git for version control"
+      "Designed and optimized interactive UI components using React, HTML, and CSS, ensuring responsive and visually appealing user interfaces",
+      "Utilized MongoDB, Express.js, and Node.js for backend development, integrating APIs and ensuring efficient data management and communication between server and front-end"
     ]
   }
 ];

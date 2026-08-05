@@ -31,7 +31,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold bg-gradient-to-r from-blue-200 to-indigo-300 bg-clip-text text-transparent flex items-center space-x-2">
             <Image src="/image.png" width={30} height={30} className='mr-2' alt="Brand" />
-            Talha Jabbar
+            Abdul Hadi
           </div>
           
           {/* Desktop Navigation */}
@@ -55,15 +55,15 @@ const Header = () => {
 
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="https://github.com/Talha5t5" target="_blank" rel="noopener noreferrer" 
+            <a href="https://github.com/Abdulhaadi123" target="_blank" rel="noopener noreferrer" 
                className="text-slate-300 hover:text-white transition-colors">
               <Github size={20} />
             </a>
-            <a href="https://www.linkedin.com/in/rana-talha-28275427a/" target="_blank" rel="noopener noreferrer" 
+            <a href="https://www.linkedin.com/in/abdul-hadi-dev/" target="_blank" rel="noopener noreferrer" 
                className="text-slate-300 hover:text-white transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:rana.talha3d@gmail.com" 
+            <a href="mailto:abdulhadi86411@gmail.com" 
                className="text-slate-300 hover:text-white transition-colors">
               <Mail size={20} />
             </a>

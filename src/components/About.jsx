@@ -25,21 +25,23 @@ const About = () => {
             </div>
 
             <p className="text-gray-300 leading-relaxed">
-              Mobile App Developer with 3+ years of experience building scalable cross-platform applications using React
-              Native and full-stack technologies including Node.js, Express.js, and MongoDB. Skilled in developing high-performance
-              mobile apps, RESTful API integration, and responsive UI development.
+              MERN Stack Developer & AI Engineer with 3+ years of hands-on experience building scalable, 
+              high-performance web applications using React, Next.js, Node.js, Express.js, MongoDB, and TypeScript. 
+              Real-world experience integrating real-time features via Socket.io, secure JWT authentication, 
+              Firebase Cloud Messaging, and third-party APIs like Stripe.
             </p>
 
             <p className="text-gray-300 leading-relaxed">
-              Experienced in deploying applications to Google Play Store, integrating Firebase services, and implementing
-              mobile monetization using Google AdMob. Passionate about building user-focused applications with clean,
-              maintainable code.
+              Also works as a Backend & AI Engineer, building production-level Generative AI systems including 
+              Retrieval-Augmented Generation (RAG) pipelines, Vector Databases, AI Agents, and Speech AI integrations, 
+              bridging the gap between LLMs and deterministic business logic. Delivered production-ready SaaS platforms, 
+              RESTful backends, and AI-powered tools across diverse domains.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="pro-card p-4">
                 <h4 className="text-blue-300 font-semibold mb-2">Location</h4>
-                <p className="text-gray-300">Islamabad, Pakistan</p>
+                <p className="text-gray-300">DHA Multan, Pakistan</p>
               </div>
               <div className="pro-card p-4">
                 <h4 className="text-blue-300 font-semibold mb-2">Experience</h4>
@@ -57,11 +59,7 @@ const About = () => {
               <div className="space-y-4">
                 <div>
                   <h5 className="text-blue-300 font-medium">Bachelor of Science in Computer Science</h5>
-                  <p className="text-gray-300">PMAS Arid Agriculture University, Rawalpindi</p>
-                </div>
-                <div>
-                  <h5 className="text-blue-300 font-medium">F.Sc (Pre-Medical)</h5>
-                  <p className="text-gray-300">Rangers College</p>
+                  <p className="text-gray-300">PMAS Arid University, Rawalpindi, Pakistan</p>
                 </div>
               </div>
             </div>
@@ -72,11 +70,11 @@ const About = () => {
                 <h4 className="text-xl font-semibold text-white">Portfolio Links</h4>
               </div>
               <div className="space-y-2">
-                <a href="https://github.com/Talha5t5" target="_blank" rel="noopener noreferrer"
+                <a href="https://github.com/Abdulhaadi123" target="_blank" rel="noopener noreferrer"
                   className="block text-indigo-300 hover:text-indigo-200 transition-colors">
                   GitHub Profile
                 </a>
-                <a href="https://www.linkedin.com/in/rana-talha-28275427a/" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.linkedin.com/in/abdul-hadi-dev/" target="_blank" rel="noopener noreferrer"
                   className="block text-blue-300 hover:text-blue-200 transition-colors">
                   LinkedIn Profile
                 </a>

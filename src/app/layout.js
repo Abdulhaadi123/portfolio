@@ -14,37 +14,39 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Talha Jabbar  | Portfolio",
+  title: "Abdul Hadi | Portfolio",
   keywords: [
-    "Talha Jabbar ",
+    "Abdul Hadi",
     "Portfolio",
-    "Mobile App Developer",
-    "React Native Expert", 
-     "Full Stack Developer", 
-     "Frontend Specialist", 
-     "Cross-Platform Developer", 
-     "Problem Solver"
+    "MERN Stack Developer",
+    "AI Engineer",
+    "Full Stack Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Generative AI",
+    "RAG Pipelines",
+    "Node.js Developer"
   ],
-  authors: [{ name: "Talha Jabbar ", url: "https://github.com  /Talha5t5" }],
-  creator: "Talha Jabbar ",
+  authors: [{ name: "Abdul Hadi", url: "https://github.com/Abdulhaadi123" }],
+  creator: "Abdul Hadi",
   openGraph: {
-    title: "Talha Jabbar | Portfolio",
+    title: "Abdul Hadi | Portfolio",
     description:
-      "Full Stack Developer specializing in Next.js, TypeScript, MongoDB, and AWS cloud services.",
+      "MERN Stack Developer & AI Engineer specializing in React, Next.js, Node.js, MongoDB, and Generative AI systems including RAG pipelines, AI Agents, and Speech AI integrations.",
     url: "https://portfolio-react-two.vercel.app/",
-    siteName: "Talha Jabbar Portfolio",
+    siteName: "Abdul Hadi Portfolio",
     images: [
       {
         url: "https://portfolio-react-two.vercel.app/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Talha Jabbar  Portfolio",
+        alt: "Abdul Hadi Portfolio",
       },
     ],
     locale: "en_US",
     type: "website",
   },
-  description: "Generated in next by Talha Jabbar ",
+  description: "Abdul Hadi — MERN Stack Developer & AI Engineer building scalable web apps and production-level Generative AI systems.",
 };
 
 export default function RootLayout({ children }) {
